@@ -14,9 +14,8 @@ module tb_calculate_vector;
     reg         m_axis_tready;
     wire        m_axis_tlast;
 
-    // ??????? ДОБАВИЛИ: подключаем 128-битный вектор «result» ???????
+    // Подключаем 128-битный вектор «result»
     wire [127:0] dut_result;
-    // ???????????????????????????????????????????????????????????
 
     // Делитель на два (slow_clk_div2) для замедления приёма из DUT
     reg slow_clk_div2;
@@ -25,9 +24,8 @@ module tb_calculate_vector;
     reg [0:0] bit_sequence [0:639];
     integer i;
 
-    // Регистр для сбора ВСЕХ выходных бит (640 входных + 128 выходных = 768)
-    reg [0:767] all_bits;
-    integer total_bit_count = 0;
+    // Флаг завершения вывода
+    reg output_complete = 0;
 
     // ------------------------------------------------------------
     // 2. ИНСТАНЦИРУЕМ DUT: calculate_vector
@@ -40,7 +38,7 @@ module tb_calculate_vector;
         .s_axis_tready(s_axis_tready),
         .s_axis_tlast (s_axis_tlast),
 
-        .result       (dut_result),    // ? вот он, порт 128-бит
+        .result       (dut_result),    // 128-битный порт
         .m_axis_tdata (m_axis_tdata),
         .m_axis_tvalid(m_axis_tvalid),
         .m_axis_tready(m_axis_tready),
@@ -73,14 +71,13 @@ module tb_calculate_vector;
     end
 
     // ------------------------------------------------------------
-    // 5. СБОР ВСЕХ ВЫХОДНЫХ БИТ (для анализа и вывода)
+    // 5. ОБНАРУЖЕНИЕ ЗАВЕРШЕНИЯ ВЫВОДА
     // ------------------------------------------------------------
-    // Каждый раз, когда (m_axis_tvalid & m_axis_tready) == 1, берём m_axis_tdata и
-    // пишем в all_bits[ total_bit_count ], инкрементируя total_bit_count.
     always @(posedge aclk) begin
-        if (aresetn && m_axis_tvalid && m_axis_tready) begin
-            all_bits[total_bit_count] <= m_axis_tdata;
-            total_bit_count <= total_bit_count + 1;
+        if (!aresetn) begin
+            output_complete <= 0;
+        end else if (m_axis_tvalid && m_axis_tready && m_axis_tlast) begin
+            output_complete <= 1;
         end
     end
 
@@ -92,17 +89,14 @@ module tb_calculate_vector;
         aresetn       = 1'b0;
         s_axis_tvalid = 1'b0;
         s_axis_tlast  = 1'b0;
-        // m_axis_tready задаётся через slow_clk_div2
         #10 aresetn = 1'b1;
 
         // 6.2. ЗАГРУЗКА 640 БИТ из файла sequence.txt
-        // Файл должен содержать ровно 640 символов '0'/'1', без пробелов.
         $readmemb("sequence.txt", bit_sequence);
 
         // 6.3. ОТПРАВКА 640 БИТ В DUT по s_axis_* (один бит в такт)
         for (i = 0; i < 640; i = i + 1) begin
             @(posedge aclk);
-            // Ждём, пока DUT скажет s_axis_tready = 1
             while (!s_axis_tready) begin
                 @(posedge aclk);
             end
@@ -111,47 +105,32 @@ module tb_calculate_vector;
             s_axis_tlast  = (i == 639) ? 1'b1 : 1'b0;
         end
 
-        // После последнего бита сразу сбрасываем s_axis_tvalid/tlast
+        // После последнего бита сбрасываем s_axis_tvalid/tlast
         @(posedge aclk);
         s_axis_tvalid = 1'b0;
         s_axis_tlast  = 1'b0;
 
-        // 6.4. ОЖИДАЕМ, пока all_bits наберёт 768 элементов
-        // (сначала 640 входных, потом 128 выходных)
-        while (total_bit_count < 768) begin
+        // 6.4. ОЖИДАЕМ завершения вывода
+        while (!output_complete) begin
             @(posedge aclk);
         end
 
-        // 6.5. ВЫВОД первых 640 БИТ (входная последовательность)
-        $display("First 640 bits (input data):");
-        for (integer j = 0; j < 20; j = j + 1) begin  // 20 групп по 32 бита = 640
-            $write("%b ", all_bits[j*32 +: 32]);
-        end
-        $write("\n");
-
-        // 6.6. ВЫВОД следующих 128 БИТ (результат по m_axis_tdata)
-        $display("Next 128 bits (result from AXI-Stream):");
-        for (integer j = 0; j < 4; j = j + 1) begin  // 4 группы по 32 бита = 128
-            $write("%b ", all_bits[640 + j*32 +: 32]);
-        end
-        $display("\n");
-
-        // 6.7. ДОПОЛНИТЕЛЬНО: выводим порт dut_result (целый 128-битный вектор)
-        $display("DUT internal 128-bit result (port): %h", dut_result);
+        // 6.5. ВЫВОД 128-БИТНОГО РЕЗУЛЬТАТА В ДВОИЧНОМ ФОРМАТЕ В ОДНУ СТРОКУ
+        $display("Result (128 bits): %b", dut_result);
 
         $display("The simulation is completed.");
         $finish;
     end
 
     // ------------------------------------------------------------
-    // 7. МОНИТОРИНГ (необязательно) - выводим важные сигналы в лог
+    // 7. МОНИТОРИНГ (закомментирован)
     // ------------------------------------------------------------
-    initial begin
-        $display("   time   aclk aresetn s_tready m_tvalid m_tdata m_tready m_tlast");
-        $monitor("%8t   %b     %b       %b         %b        %b         %b       %b",
-                  $time, aclk, aresetn, s_axis_tready,
-                  m_axis_tvalid, m_axis_tdata,
-                  m_axis_tready, m_axis_tlast);
-    end
+    // initial begin
+    //     $display("   time   aclk aresetn s_tready m_tvalid m_tdata m_tready m_tlast");
+    //     $monitor("%8t   %b     %b       %b         %b        %b         %b       %b",
+    //               $time, aclk, aresetn, s_axis_tready,
+    //               m_axis_tvalid, m_axis_tdata,
+    //               m_axis_tready, m_axis_tlast);
+    // end
 
 endmodule
