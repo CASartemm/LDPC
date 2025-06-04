@@ -1,0 +1,179 @@
+2022.2:
+ * Version 2.0 (Rev. 11)
+ * Bug Fix: Minor, non-functional, RTL update to address change in Questa behaviour.
+
+2022.1.2:
+ * Version 2.0 (Rev. 10)
+ * No changes
+
+2022.1.1:
+ * Version 2.0 (Rev. 10)
+ * No changes
+
+2022.1:
+ * Version 2.0 (Rev. 10)
+ * Feature Enhancement: C model MEX wrapper updates to support Octave
+
+2021.2.2:
+ * Version 2.0 (Rev. 9)
+ * No changes
+
+2021.2.1:
+ * Version 2.0 (Rev. 9)
+ * No changes
+
+2021.2:
+ * Version 2.0 (Rev. 9)
+ * Bug Fix: Correction to driver Makefiles to resolve Windows compilation failure.
+
+2021.1.1:
+ * Version 2.0 (Rev. 8)
+ * No changes
+
+2021.1:
+ * Version 2.0 (Rev. 8)
+ * Bug Fix: Correction to example design helper IP driver Makefiles to support Windows tool chain.
+ * Bug Fix: Correction to example design board support.
+ * Other: Refreshed example design helper IP for latest tool compatibilty and associated example design changes.
+
+2020.3:
+ * Version 2.0 (Rev. 7)
+ * Bug Fix: Correction to bare metal driver register write depth check.
+
+2020.2.2:
+ * Version 2.0 (Rev. 6)
+ * No changes
+
+2020.2.1:
+ * Version 2.0 (Rev. 6)
+ * No changes
+
+2020.2:
+ * Version 2.0 (Rev. 6)
+ * Bug Fix: C model example application compilation script updated to reflect Product Guide recommended command.
+ * Bug Fix: Fix to example design to support Versal.
+ * Other: Windows C model compilation now uses Visual Studio 2017
+
+2020.1.1:
+ * Version 2.0 (Rev. 5)
+ * No changes
+
+2020.1:
+ * Version 2.0 (Rev. 5)
+ * Bug Fix: Fix to example design CDC handling.
+ * Bug Fix: Correct example design PS application Vitus build script.
+
+2019.2.2:
+ * Version 2.0 (Rev. 4)
+ * No changes
+
+2019.2.1:
+ * Version 2.0 (Rev. 4)
+ * No changes
+
+2019.2:
+ * Version 2.0 (Rev. 4)
+ * Bug Fix: Correction dump_block function in C model example application for 5G configurations.
+ * Bug Fix: Update to C model example application dump_axis function to support MS Visual Studio.
+ * Bug Fix: Enhanced LDPC code validation.
+ * Other: Update PS example design to use Vitis.
+
+2019.1.3:
+ * Version 2.0 (Rev. 3)
+ * No changes
+
+2019.1.2:
+ * Version 2.0 (Rev. 3)
+ * No changes
+
+2019.1.1:
+ * Version 2.0 (Rev. 3)
+ * No changes
+
+2019.1:
+ * Version 2.0 (Rev. 3)
+ * Bug Fix: Correction to transaction file generation on Windows.
+ * Bug Fix: Addressing memory leak in MEX wrapper.
+ * Bug Fix: Add DOCSIS ranging codes.
+ * Bug Fix: Fixed C model crash when multiple DSP IP C models are run together: AR 71876
+ * Revision change in one or more subcores
+
+2018.3.1:
+ * Version 2.0 (Rev. 2)
+ * No changes
+
+2018.3:
+ * Version 2.0 (Rev. 2)
+ * Bug Fix: Correction to memory initialization file generation on Windows.
+
+2018.2:
+ * Version 2.0 (Rev. 1)
+ * Bug Fix: Correction to C model Offset Min-Sum implementation, AR71036.
+ * Bug Fix: Improve example design AWGN channel accuracy.
+ * Bug Fix: Resolve example design CDC critical warnings on the interrupt signals.
+
+2018.1:
+ * Version 2.0
+ * Port Change: s_axis_ctrl_tdata and m_axis_status_tdata change from 32 to 40 bits wide when the core is configured to use the 5G New Radio (NR) standard.  There are no port changes for other configurations.
+ * Bug Fix: PS example design fails to compile when Vivado project language is set to VHDL, AR70127
+ * New Feature: Support for the 5G New Radio (NR) standard
+ * New Feature: LDPC code tables can be initialized with LDPC codes for a given standard or with custom LDPC codes
+ * New Feature: Min offset scaling option
+ * New Feature: Optional output parity check
+ * New Feature: Customizable reset values for core registers
+ * Feature Enhancement: Optimizations to improve throughput and reduce resource utilization
+ * Revision change in one or more subcores
+
+2017.4:
+ * Version 1.0 (Rev. 1)
+ * Bug Fix: Fixed layer look-up issue that result in incorrect DOUT data and parity flag for single block: AR69966
+
+2017.3:
+ * Version 1.0
+ * General: Initial release
+
+(c) Copyright 2017 - 2022 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

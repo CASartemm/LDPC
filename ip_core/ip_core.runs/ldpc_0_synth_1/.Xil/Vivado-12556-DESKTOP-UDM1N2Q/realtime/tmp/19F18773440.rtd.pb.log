@@ -1,0 +1,7 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+WARNING: [Synth 8-7129] Port en in module ldpc_v2_0_11_ld_kc_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port so_rot_e8p[127][6] in module ldpc_v2_0_11_ld_par_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port so_rot_e8p[127][5] in module ldpc_v2_0_11_ld_par_calc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port so_rot_e8p[127][4] in module ldpc_v2_0_11_ld_par_calc is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

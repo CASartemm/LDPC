@@ -1,0 +1,25 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: M:/Vivado_2022.2/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L ecc_v2_0_13 -L fec_5g_common_v1_1_1 -L ldpc_v2_0_11 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_LDPC_0_behav xil_defaultlib.tb_LDPC_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 's_axi_awaddr' is not connected on this instance [C:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.srcs/sources_1/new/tb_LDPC_Encoder_Decoder.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.srcs/sources_1/new/tb_LDPC_Encoder_Decoder.v" Line 1. Module tb_LDPC_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.srcs/sources_1/new/tb_LDPC_Encoder_Decoder.v" Line 1. Module tb_LDPC_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package ldpc_v2_0_11.ldpc_v2_0_11_common_pkg
+Compiling package fec_5g_common_v1_1_1.fec_5g_common_v1_1_1_pkg
+Compiling package ldpc_v2_0_11.ldpc_v2_0_11_pkg
+Compiling package ldpc_v2_0_11.ldpc_v2_0_11_axi_lite_pkg
+Compiling package ldpc_v2_0_11.ldpc_v2_0_11_ld_pkg
+Compiling package ldpc_v2_0_11.ldpc_v2_0_11_5g_pkg
+Compiling package ldpc_v2_0_11.ldpc_v2_0_11_probe_pkg
+Compiling module unisims_ver.RAM64X1S(INIT=64'b10000000000000...
+Compiling module xil_defaultlib.ldpc_0
+Compiling module xil_defaultlib.tb_LDPC_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_LDPC_0_behav

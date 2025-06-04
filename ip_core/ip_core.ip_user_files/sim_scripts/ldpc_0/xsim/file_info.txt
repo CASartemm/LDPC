@@ -1,0 +1,2 @@
+ldpc_0.sv,systemverilog,xil_defaultlib,../../../../ip_core.gen/sources_1/ip/ldpc_0/sim/ldpc_0.sv,incdir="$ref_dir/../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"incdir="../../../../ip_core.gen/sources_1/ip/ldpc_0/drivers/ldpc_v2_0/src"
+glbl.v,Verilog,xil_defaultlib,glbl.v

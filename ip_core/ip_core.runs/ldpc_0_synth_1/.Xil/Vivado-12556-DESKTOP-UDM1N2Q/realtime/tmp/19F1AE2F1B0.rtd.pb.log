@@ -1,0 +1,3 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+WARNING: [Synth 8-7129] Port is_pad[3] in module ldpc_v2_0_11_ld_mins is either unconnected or has no load

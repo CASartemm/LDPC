@@ -1,0 +1,10 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_RTM_I/BANK_0_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_RTM_I/BANK_1_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_RTM_I/BANK_2_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_RTM_I/BANK_3_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_ORM_I/BANK_0_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_ORM_I/BANK_1_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_ORM_I/BANK_2_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LD_MEM_IF_I/MB_MEM_ORM_I/BANK_3_G.SDP_RAM_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg to conserve power

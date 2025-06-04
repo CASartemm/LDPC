@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "ecc_v2_0_13" -L "fec_5g_common_v1_1_1" -L "ldpc_v2_0_11" -L "uvm" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_LDPC_0_behav" "xil_defaultlib.tb_LDPC_0" "xil_defaultlib.glbl" -log "elaborate.log" 

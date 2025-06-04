@@ -1,0 +1,4 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+INFO: [Synth 8-3936] Found unconnected internal register 'PIPE_G.dist_m_e0_reg[0]' and it is trimmed from '4' to '2' bits. [c:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.gen/sources_1/ip/ldpc_0/hdl/ldpc_v2_0_rfs.sv:8659]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PIPE_G.dist_m_e0_reg[0][-1111111111] )
