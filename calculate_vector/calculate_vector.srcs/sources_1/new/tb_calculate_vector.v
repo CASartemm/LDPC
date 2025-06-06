@@ -2,9 +2,7 @@
 
 module tb_calculate_vector;
 
-    // ------------------------------------------------------------
-    // 1. ОБЪЯВЛЯЕМ СИГНАЛЫ
-    // ------------------------------------------------------------
+    // Сигналы
     reg  aclk, aresetn;
     reg  s_axis_tdata, s_axis_tvalid, s_axis_tlast;
     wire s_axis_tready;
@@ -17,7 +15,7 @@ module tb_calculate_vector;
     // Подключаем 128-битный вектор «result»
     wire [127:0] dut_result;
 
-    // Делитель на два (slow_clk_div2) для замедления приёма из DUT
+    // Делитель на два для замедления приёма
     reg slow_clk_div2;
 
     // Массив для входной 640-битной последовательности
@@ -27,9 +25,10 @@ module tb_calculate_vector;
     // Флаг завершения вывода
     reg output_complete = 0;
 
-    // ------------------------------------------------------------
-    // 2. ИНСТАНЦИРУЕМ DUT: calculate_vector
-    // ------------------------------------------------------------
+    // Счётчик для отслеживания номера бита
+    integer bit_counter = 0;
+
+    // Инстанцируем DUT
     calculate_vector dut (
         .aclk         (aclk),
         .aresetn      (aresetn),
@@ -38,24 +37,20 @@ module tb_calculate_vector;
         .s_axis_tready(s_axis_tready),
         .s_axis_tlast (s_axis_tlast),
 
-        .result       (dut_result),    // 128-битный порт
+        .result       (dut_result),
         .m_axis_tdata (m_axis_tdata),
         .m_axis_tvalid(m_axis_tvalid),
         .m_axis_tready(m_axis_tready),
         .m_axis_tlast (m_axis_tlast)
     );
 
-    // ------------------------------------------------------------
-    // 3. ГЕНЕРАЦИЯ ТАКТОВОГО СИГНАЛА (100 МГц, период 10 нс)
-    // ------------------------------------------------------------
+    // Генерация тактового сигнала (100 МГц, период 10 нс)
     initial begin
         aclk = 0;
         forever #5 aclk = ~aclk;
     end
 
-    // ------------------------------------------------------------
-    // 4. ДЕЛИТЕЛЬ НА ДВА (slow_clk_div2) - замедление m_axis_tready
-    // ------------------------------------------------------------
+    // Делитель на два для m_axis_tready
     initial begin
         slow_clk_div2 = 1'b0;
     end
@@ -70,9 +65,7 @@ module tb_calculate_vector;
         m_axis_tready = slow_clk_div2;
     end
 
-    // ------------------------------------------------------------
-    // 5. ОБНАРУЖЕНИЕ ЗАВЕРШЕНИЯ ВЫВОДА
-    // ------------------------------------------------------------
+    // Обнаружение завершения вывода
     always @(posedge aclk) begin
         if (!aresetn) begin
             output_complete <= 0;
@@ -81,20 +74,34 @@ module tb_calculate_vector;
         end
     end
 
-    // ------------------------------------------------------------
-    // 6. ОСНОВНОЙ initial-БЛОК: сброс ? загрузка ? передача ? ожидание ? вывод
-    // ------------------------------------------------------------
+    // Логика для отображения бит с номерами и отметки начала передачи 128 бит
+    always @(posedge aclk) begin
+        if (aresetn && m_axis_tvalid && m_axis_tready) begin
+            bit_counter = bit_counter + 1;
+            if (bit_counter == 641) begin
+                $display("Начало передачи 128-битного результата");
+            end
+            $display("%d-й бит: %b", bit_counter, m_axis_tdata);
+        end
+    end
+
+    // Отладочный вывод для m_axis_tvalid и m_axis_tready
+    always @(posedge aclk) begin
+        $display("Time: %t, m_axis_tvalid: %b, m_axis_tready: %b", $time, m_axis_tvalid, m_axis_tready);
+    end
+
+    // Основной initial-блок: сброс ? загрузка ? передача ? ожидание ? завершение
     initial begin
-        // 6.1. Сброс и начальные сигналы
+        // Сброс и начальные сигналы
         aresetn       = 1'b0;
         s_axis_tvalid = 1'b0;
         s_axis_tlast  = 1'b0;
         #10 aresetn = 1'b1;
 
-        // 6.2. ЗАГРУЗКА 640 БИТ из файла sequence.txt
+        // Загрузка 640 бит из файла sequence.txt
         $readmemb("sequence.txt", bit_sequence);
 
-        // 6.3. ОТПРАВКА 640 БИТ В DUT по s_axis_* (один бит в такт)
+        // Отправка 640 бит в DUT
         for (i = 0; i < 640; i = i + 1) begin
             @(posedge aclk);
             while (!s_axis_tready) begin
@@ -104,33 +111,20 @@ module tb_calculate_vector;
             s_axis_tvalid = 1'b1;
             s_axis_tlast  = (i == 639) ? 1'b1 : 1'b0;
         end
+        $display("Цикл завершился, i = %d", i);
 
-        // После последнего бита сбрасываем s_axis_tvalid/tlast
+        // Сброс сигналов после последнего бита
         @(posedge aclk);
         s_axis_tvalid = 1'b0;
         s_axis_tlast  = 1'b0;
 
-        // 6.4. ОЖИДАЕМ завершения вывода
+        // Ожидание завершения вывода
         while (!output_complete) begin
             @(posedge aclk);
         end
 
-        // 6.5. ВЫВОД 128-БИТНОГО РЕЗУЛЬТАТА В ДВОИЧНОМ ФОРМАТЕ В ОДНУ СТРОКУ
-        $display("Result (128 bits): %b", dut_result);
-
         $display("The simulation is completed.");
         $finish;
     end
-
-    // ------------------------------------------------------------
-    // 7. МОНИТОРИНГ (закомментирован)
-    // ------------------------------------------------------------
-    // initial begin
-    //     $display("   time   aclk aresetn s_tready m_tvalid m_tdata m_tready m_tlast");
-    //     $monitor("%8t   %b     %b       %b         %b        %b         %b       %b",
-    //               $time, aclk, aresetn, s_axis_tready,
-    //               m_axis_tvalid, m_axis_tdata,
-    //               m_axis_tready, m_axis_tlast);
-    // end
 
 endmodule
