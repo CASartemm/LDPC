@@ -1,4 +1,0 @@
-xilinx rtfpga
-rt::do_reinfer_area_combined 1
-INFO: [Synth 8-3936] Found unconnected internal register 'OP_ADDR_GEN_I/SIZE_REG_I/m_axis_tdata_reg[start_addr]' and it is trimmed from '12' to '9' bits. [c:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.gen/sources_1/ip/ldpc_0/hdl/ldpc_v2_0_rfs.sv:28401]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEARBOX_I/\E0_FF_G.wr_mask_pt_aligned_e1_reg[255] )

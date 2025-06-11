@@ -1,91 +1,87 @@
 module tb_calculate_vector;
 
-    // Сигналы
-    reg  aclk, aresetn;
-    reg  s_axis_tdata;
-    reg  s_axis_tvalid, s_axis_tlast;
+    // Сигналы управления
+    reg aclk, aresetn;
+    reg s_axis_tdata, s_axis_tvalid, s_axis_tlast;
     wire s_axis_tready;
-
-    wire        m_axis_tdata;
-    wire        m_axis_tvalid;
-    reg         m_axis_tready;
-    wire        m_axis_tlast;
-
-    wire [127:0] dut_result;
-
-    reg slow_clk_div2;
-
+    
+    // AXI Stream Master интерфейс для получения результата
+    wire m_axis_tdata;
+    wire m_axis_tvalid;
+    reg  m_axis_tready;
+    wire m_axis_tlast;
+    
+    // Массив для входной последовательности битов
     reg [0:0] bit_sequence [0:639];
-    integer bit_index;
+    integer i;
+    
+    // Регистр для сбора результата
+    reg [127:0] received_result;
+    integer bit_count;
 
+    // Экземпляр модуля calculate_vector
     calculate_vector dut (
-        .aclk         (aclk),
-        .aresetn      (aresetn),
-        .s_axis_tdata (s_axis_tdata),
+        .aclk(aclk),
+        .aresetn(aresetn),
+        .s_axis_tdata(s_axis_tdata),
         .s_axis_tvalid(s_axis_tvalid),
         .s_axis_tready(s_axis_tready),
-        .s_axis_tlast (s_axis_tlast),
-        .result       (dut_result),
-        .m_axis_tdata (m_axis_tdata),
+        .s_axis_tlast(s_axis_tlast),
+        .m_axis_tdata(m_axis_tdata),
         .m_axis_tvalid(m_axis_tvalid),
         .m_axis_tready(m_axis_tready),
-        .m_axis_tlast (m_axis_tlast)
+        .m_axis_tlast(m_axis_tlast)
     );
 
     // Генерация тактового сигнала
     initial begin
         aclk = 0;
-        forever #5 aclk = ~aclk;
+       forever #5 aclk = ~aclk;  // Частота 100 МГц
     end
 
-    // Генерация замедленного сигнала для m_axis_tready
-    initial begin
-        slow_clk_div2 = 1'b0;
-    end
-    always @(posedge aclk or negedge aresetn) begin
-        if (!aresetn) begin
-            slow_clk_div2 <= 1'b0;
-        end else begin
-            slow_clk_div2 <= ~slow_clk_div2;
-        end
-    end
-    always @(*) begin
-        m_axis_tready = slow_clk_div2;
-    end
-
-    // Основной процесс отправки данных
+    // Логика тестбенча
     initial begin
         // Инициализация
-        aresetn = 1'b0;
-        s_axis_tvalid = 1'b0;
-        s_axis_tlast = 1'b0;
-        s_axis_tdata = 1'b0;
-        #10 aresetn = 1'b1;
+        aresetn = 0;
+        s_axis_tvalid = 0;
+        s_axis_tlast = 0;
+        m_axis_tready = 1;  // Всегда готов принимать данные
+        bit_count = 0;
+        received_result = 128'b0;
+        #10 aresetn = 1;
 
-        // Чтение данных из файла
+        // Загрузка последовательности из файла
         $readmemb("sequence.txt", bit_sequence);
 
-        // Установка начальных значений и запуск передачи
-        bit_index = 0;
-        s_axis_tdata = bit_sequence[0];
-        s_axis_tlast = (bit_index == 639);
-        s_axis_tvalid = 1'b1;
-
-        // Бесконечная отправка потоков
-        forever begin
+        // Отправка последовательности в модуль
+        for (i = 0; i < 640; i = i + 1) begin
             @(posedge aclk);
-            if (s_axis_tready) begin
-                bit_index = (bit_index + 1) % 640;
-                s_axis_tdata = bit_sequence[bit_index];
-                s_axis_tlast = (bit_index == 639);
+            while (!s_axis_tready) begin
+                @(posedge aclk);
             end
+            s_axis_tdata = bit_sequence[i];
+            s_axis_tvalid = 1;
+            s_axis_tlast = (i == 639);
+        end
+        @(posedge aclk);
+        s_axis_tvalid = 0;
+        s_axis_tlast = 0;
+
+   // Ожидание и сбор результата
+bit_count = 0;  // Сбрасываем счетчик перед началом передачи
+while (bit_count < 128) begin
+    @(posedge aclk);
+    if (m_axis_tvalid && m_axis_tready) begin
+        received_result[bit_count] = m_axis_tdata;
+        bit_count = bit_count + 1;  // Увеличиваем счетчик с первого бита
+        if (m_axis_tlast && bit_count == 128) begin
+            $display("Результат: %b", received_result);
         end
     end
+end
 
-    // Остановка симуляции
-    initial begin
-        #10000; // Симуляция длится 10 мкс
-        $display("Симуляция завершена.");
+        // Завершение симуляции
+        $display("Симуляция завершена");
         $finish;
     end
 

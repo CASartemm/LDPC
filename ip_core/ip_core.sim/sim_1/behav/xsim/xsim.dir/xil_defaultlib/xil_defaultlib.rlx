@@ -1,7 +1,0 @@
-0.7
-2020.2
-Oct 14 2022
-05:20:55
-C:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.gen/sources_1/ip/ldpc_0/sim/ldpc_0.sv,1748957726,systemVerilog,,,,ldpc_0,,fec_5g_common_v1_1_1;ldpc_v2_0_11;uvm,../../../../ip_core.ip_user_files/ipstatic/hdl;M:/Vivado_2022.2/Vivado/2022.2/data/xilinx_vip/include,,,,,
-C:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,fec_5g_common_v1_1_1;ldpc_v2_0_11;uvm,,,,,,
-C:/Users/arty/Documents/GitHub/LDPC/ip_core/ip_core.srcs/sources_1/new/tb_LDPC_Encoder_Decoder.v,1748959457,verilog,,,,tb_LDPC_0,,fec_5g_common_v1_1_1;ldpc_v2_0_11;uvm,../../../../ip_core.ip_user_files/ipstatic/hdl;M:/Vivado_2022.2/Vivado/2022.2/data/xilinx_vip/include,,,,,
