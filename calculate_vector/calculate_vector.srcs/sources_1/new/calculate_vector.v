@@ -32,19 +32,26 @@ module calculate_vector (
     wire         valid;    // ���������� out_row
     wire         en = br_m_axis_tvalid; // ������ ��� ������
 
-    // FSM ��� ����������
-    reg [127:0]  acc;       // ����������� XOR (128 ���)
-    reg [6:0]    bit_index; // ������ ��� �������� 128 ��� (0..127)
-    reg          state;     // FSM: RECEIVING ��� TRANSMITTING
+    // FSM для управления
+    reg [127:0]  acc;       // аккумулятор XOR (128 бит)
+    reg [6:0]    bit_index; // индекс для передачи 128 бит (0..127)
+    reg [1:0]    state;     // FSM: RECEIVING, TRANSMITTING, REPEAT
     reg          prev_state;
 
-    localparam RECEIVING    = 1'b0;
-    localparam TRANSMITTING = 1'b1;
+    // Буфер для хранения 640 бит
+    reg [639:0]  input_buffer;
+    reg [9:0]    buffer_index;
+    reg          buffer_full;
 
-    // ��� �������� �� RECEIVING � TRANSMITTING ���������� shift
-    wire srp_rst = ~aresetn | (state == TRANSMITTING && prev_state == RECEIVING);
+    localparam RECEIVING    = 2'b00;
+    localparam TRANSMITTING = 2'b01;
+    localparam REPEAT       = 2'b10;
 
-    // ================ ����������� =================
+    // Сброс для shift_register_processor
+    wire srp_rst = ~aresetn | (state == TRANSMITTING && prev_state == RECEIVING) | 
+                   (state == REPEAT && prev_state == TRANSMITTING);
+
+    // ================  =================
     // 1) bit_receiver: ��������� 640 ��� �� s_axis_* � �������� �� ����� br_m_axis_*
     bit_receiver bit_rx (
         .aclk         (aclk),
@@ -80,49 +87,76 @@ module calculate_vector (
     // ==================== FSM ====================
     always @(posedge aclk or negedge aresetn) begin
         if (!aresetn) begin
-            // ������������� ���������
+            // Сброс всех регистров
             state             <= RECEIVING;
             prev_state        <= RECEIVING;
             int_m_axis_tready <= 1'b1;
             bit_index         <= 7'd0;
             acc               <= 128'd0;
             result            <= 128'd0;
+            buffer_index      <= 10'd0;
+            buffer_full       <= 1'b0;
+            input_buffer      <= 640'd0;
         end else begin
             prev_state <= state;
             case (state)
                 // ------------- RECEIVING -------------
                 RECEIVING: begin
-                    // ������������� s_axis_tready � 1, ����� �� ����������� ��������
                     int_m_axis_tready <= 1'b1;
                     if (br_m_axis_tvalid && int_m_axis_tready) begin
-                        // ���� ��� ����� '1', �� xor � ������� �������������
+                        // Сохраняем входной бит в буфер
+                        input_buffer[buffer_index] <= br_m_axis_tdata;
+                        buffer_index <= buffer_index + 1;
+
                         if (br_m_axis_tdata)
                             acc <= acc ^ out_row;
-                        // ���� ��� ��������� ��� (640-�), ��������� result
                         if (br_m_axis_tlast) begin
                             result            <= br_m_axis_tdata ? (acc ^ out_row) : acc;
                             acc               <= 128'd0;
                             state             <= TRANSMITTING;
-                            bit_index         <= 7'd0;   // ���������� ������ ��� ��������
-                            int_m_axis_tready <= 1'b0;   // �� ��������� ������, ���� ��������
+                            bit_index         <= 7'd0;
+                            int_m_axis_tready <= 1'b0;
+                            buffer_full       <= 1'b1;
                         end
                     end
                 end
 
                 // ------------ TRANSMITTING ------------
-               TRANSMITTING: begin
-    int_m_axis_tready <= 1'b0;
-    if (m_axis_tvalid && m_axis_tready) begin
-        if (bit_index < 7'd127) begin
-            bit_index <= bit_index + 1;
-        end else begin
-            // �������� ��� 128 ��� - ���������� result � ������������ � RECEIVING
-            state     <= RECEIVING;
-            bit_index <= 7'd0;
-            result    <= 128'd0; 
-        end
-    end
-end
+                TRANSMITTING: begin
+                    int_m_axis_tready <= 1'b0;
+                    if (m_axis_tvalid && m_axis_tready) begin
+                        if (bit_index < 7'd127) begin
+                            bit_index <= bit_index + 1;
+                        end else begin
+                            // После передачи 128 бит, переходим в состояние REPEAT
+                            state     <= REPEAT;
+                            bit_index <= 7'd0;
+                            buffer_index <= 10'd0;
+                        end
+                    end
+                end
+
+                // ------------ REPEAT ------------
+                REPEAT: begin
+                    if (buffer_full) begin
+                        // Используем сохраненные биты из буфера
+                        if (input_buffer[buffer_index]) begin
+                            acc <= acc ^ out_row;
+                        end
+                        
+                        if (buffer_index == 10'd639) begin
+                            result <= input_buffer[639] ? (acc ^ out_row) : acc;
+                            acc <= 128'd0;
+                            state <= TRANSMITTING;
+                            bit_index <= 7'd0;
+                            buffer_full <= 1'b0;
+                        end else begin
+                            buffer_index <= buffer_index + 1;
+                        end
+                    end else begin
+                        state <= RECEIVING;
+                    end
+                end
 
             endcase
         end
