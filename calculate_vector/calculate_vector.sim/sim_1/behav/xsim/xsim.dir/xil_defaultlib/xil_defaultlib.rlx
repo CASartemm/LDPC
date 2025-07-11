@@ -2,8 +2,8 @@
 2020.2
 Oct 14 2022
 05:20:55
-C:/Users/Арти/Desktop/calculate_vector/calculate_vector.sim/sim_1/behav/xsim/glbl.v,1749548588,verilog,,,,glbl,,,,,,,,
-C:/Users/Арти/Desktop/calculate_vector/calculate_vector.srcs/sources_1/new/bit_receiver.v,1750073835,verilog,,C:/Users/Арти/Desktop/calculate_vector/calculate_vector.srcs/sources_1/new/calculate_vector.v,,bit_receiver,,,,,,,,
-C:/Users/Арти/Desktop/calculate_vector/calculate_vector.srcs/sources_1/new/calculate_vector.v,1750324303,verilog,,C:/Users/Арти/Desktop/calculate_vector/calculate_vector.srcs/sources_1/new/shift_register_processor.v,,calculate_vector,,,,,,,,
-C:/Users/Арти/Desktop/calculate_vector/calculate_vector.srcs/sources_1/new/shift_register_processor.v,1749548588,verilog,,C:/Users/Арти/Desktop/calculate_vector/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,,shift_register_processor,,,,,,,,
-C:/Users/Арти/Desktop/calculate_vector/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,1750321793,verilog,,,,tb_calculate_vector,,,,,,,,
+C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.sim/sim_1/behav/xsim/glbl.v,1749548588,verilog,,,,glbl,,,,,,,,
+C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/bit_receiver.v,1750073835,verilog,,C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/calculate_vector.v,,bit_receiver,,,,,,,,
+C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/calculate_vector.v,1751893796,verilog,,C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/shift_register_processor.v,,calculate_vector,,,,,,,,
+C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/shift_register_processor.v,1751893805,verilog,,C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,,shift_register_processor,,,,,,,,
+C:/Users/arty/Documents/GitHub/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,1751898342,verilog,,,,tb_calculate_vector,,,,,,,,

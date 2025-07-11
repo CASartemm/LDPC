@@ -1,8 +1,8 @@
 module shift_register_processor (
     input clk,
     input rst,
-    input en,                  // Новый входной сигнал разрешения
-    output wire [127:0] out_row, // Изменено на wire для комбинационного вывода
+    input en,                  // РќРѕРІС‹Р№ РІС…РѕРґРЅРѕР№ СЃРёРіРЅР°Р» СЂР°Р·СЂРµС€РµРЅРёСЏ
+    output wire [127:0] out_row, // РР·РјРµРЅРµРЅРѕ РЅР° wire РґР»СЏ РєРѕРјР±РёРЅР°С†РёРѕРЅРЅРѕРіРѕ РІС‹РІРѕРґР°
     output reg valid
 );
 
@@ -15,7 +15,7 @@ module shift_register_processor (
         $readmemb("base_rows.txt", base_rows);
     end
 
-    // Комбинационное присваивание для out_row
+    // РљРѕРјР±РёРЅР°С†РёРѕРЅРЅРѕРµ РїСЂРёСЃРІР°РёРІР°РЅРёРµ РґР»СЏ out_row
     assign out_row = {sr0, sr1, sr2, sr3};
 
     always @(posedge clk or posedge rst) begin
@@ -47,7 +47,7 @@ module shift_register_processor (
                 shift_cnt <= shift_cnt + 1;
             end
         end else begin
-            valid <= 0; // Сигнал valid низкий, когда обновления нет
+            valid <= 0; // РЎРёРіРЅР°Р» valid РЅРёР·РєРёР№, РєРѕРіРґР° РѕР±РЅРѕРІР»РµРЅРёСЏ РЅРµС‚
         end
     end
 endmodule
