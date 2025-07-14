@@ -38,15 +38,6 @@ module LDPC (
     // Сигнал сброса для shift_register_processor
     wire srp_rst = ~aresetn | (is_transmitting && bit_index == 0); // Сбрасываем его при общем сбросе или начале передачи
 
-    // Переворачиваем строку out_row, чтобы получить reversed_out_row
-    reg [127:0] reversed_out_row;      // Строка из shift_register_processor, но задом наперёд
-    integer rev_i;                     // Счётчик для цикла
-    always @(*) begin                  // 
-        for (rev_i = 0; rev_i < 128; rev_i = rev_i + 1) begin
-            reversed_out_row[rev_i] = out_row[127 - rev_i]; // Берём биты с конца
-        end
-    end
-
     // Подключаем подмодули
     bit_receiver bit_rx (              // Модуль, который просто передаёт биты от входа к нам
         .aclk         (aclk),
@@ -97,11 +88,11 @@ module LDPC (
                 int_m_axis_tready <= 1'b1; // Продолжаем быть готовыми
                 buffer_index      <= buffer_index + 1; // Считаем, сколько битов приняли
                 if (br_m_axis_tdata) begin // Если пришёл бит 1
-                    acc <= acc ^ reversed_out_row; // Добавляем строку к аккумулятору через XOR
+                    acc <= acc ^ out_row; // Добавляем строку к аккумулятору через XOR
                 end
                 // Если это последний бит пакета
                 if (br_m_axis_tlast) begin
-                    result          <= br_m_axis_tdata ? (acc ^ reversed_out_row) : acc; // Финальный результат
+                    result          <= br_m_axis_tdata ? (acc ^ out_row) : acc; // Финальный результат
                     is_transmitting <= 1'b1; // Переключаемся на выдачу
                     buffer_index    <= 10'd0; // Сбрасываем счётчик приёма
                     bit_index       <= 7'd0;  // Сбрасываем счётчик выдачи

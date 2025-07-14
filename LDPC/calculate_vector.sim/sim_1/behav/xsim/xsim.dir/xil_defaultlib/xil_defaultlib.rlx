@@ -2,10 +2,8 @@
 2020.2
 Oct 14 2022
 05:20:55
-H:/Git/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/calculate_vector.v,1752483739,verilog,,H:/Git/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/shift_register_processor.v,,calculate_vector,,,,,,,,
-H:/Git/LDPC/calculate_vector/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,1752477302,verilog,,,,tb_calculate_vector,,,,,,,,
-H:/workk/LDPC/calculate_vector.sim/sim_1/behav/xsim/glbl.v,1752253020,verilog,,,,glbl,,,,,,,,
-H:/workk/LDPC/calculate_vector.srcs/sources_1/new/bit_receiver.v,1752486081,verilog,,H:/workk/LDPC/calculate_vector.srcs/sources_1/new/calculate_vector.v,,bit_receiver,,,,,,,,
-H:/workk/LDPC/calculate_vector.srcs/sources_1/new/calculate_vector.v,1752487103,verilog,,H:/workk/LDPC/calculate_vector.srcs/sources_1/new/shift_register_processor.v,,LDPC,,,,,,,,
-H:/workk/LDPC/calculate_vector.srcs/sources_1/new/shift_register_processor.v,1752485206,verilog,,H:/workk/LDPC/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,,shift_register_processor,,,,,,,,
-H:/workk/LDPC/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,1752487183,verilog,,,,tb_LDPC,,,,,,,,
+H:/Git/LDPC/LDPC/calculate_vector.sim/sim_1/behav/xsim/glbl.v,1752253020,verilog,,,,glbl,,,,,,,,
+H:/Git/LDPC/LDPC/calculate_vector.srcs/sources_1/new/bit_receiver.v,1752486081,verilog,,H:/Git/LDPC/LDPC/calculate_vector.srcs/sources_1/new/calculate_vector.v,,bit_receiver,,,,,,,,
+H:/Git/LDPC/LDPC/calculate_vector.srcs/sources_1/new/calculate_vector.v,1752501686,verilog,,H:/Git/LDPC/LDPC/calculate_vector.srcs/sources_1/new/shift_register_processor.v,,LDPC,,,,,,,,
+H:/Git/LDPC/LDPC/calculate_vector.srcs/sources_1/new/shift_register_processor.v,1752485206,verilog,,H:/Git/LDPC/LDPC/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,,shift_register_processor,,,,,,,,
+H:/Git/LDPC/LDPC/calculate_vector.srcs/sources_1/new/tb_calculate_vector.v,1752502329,verilog,,,,tb_LDPC,,,,,,,,
