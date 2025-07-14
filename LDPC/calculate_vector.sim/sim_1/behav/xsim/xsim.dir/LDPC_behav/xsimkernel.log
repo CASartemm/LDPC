@@ -1,0 +1,7 @@
+Running: xsim.dir/LDPC_behav/xsimk.exe -simmode gui -wdb LDPC_behav.wdb -simrunnum 0 -socket 37240
+Design successfully loaded
+Design Loading Memory Usage: 7848 KB (Peak: 7848 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8496 KB (Peak: 8496 KB)
+Simulation CPU Usage: 30 ms
