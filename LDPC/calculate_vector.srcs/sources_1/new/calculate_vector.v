@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 // Основной модуль . основные расчеты 
-module LDPC (
+module calculate_vector (
     input  wire         aclk,          
     input  wire         aresetn,       
     // AXI Stream Slave - сюда приходят данные (640 бит по одному за такт)

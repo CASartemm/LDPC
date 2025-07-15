@@ -1,4 +1,4 @@
-module tb_LDPC;  // Определение модуля тестбенча для проверки LPDC
+module tb_calculate_vector;  // Определение модуля тестбенча для проверки calculate_vector
 
     // Сигналы для тестирования
     reg aclk;                     // Регистр для тактового сигнала (clock)
@@ -29,7 +29,7 @@ module tb_LDPC;  // Определение модуля тестбенча для проверки LPDC
     integer fail_count;           // Целочисленная переменная для подсчета неуспешных тестов
 
     // Подключение DUT (Device Under Test)
-    LDPC dut (        // Инстанцирование модуля LDPC как DUT
+         calculate_vector dut (        // Инстанцирование модуля calculate_vector как DUT
         .aclk(aclk),              // Подключение тактового сигнала к DUT
         .aresetn(aresetn),        // Подключение сигнала сброса к DUT
         .s_axis_tdata(s_axis_tdata),  // Подключение входных данных к DUT
