@@ -1,6 +1,0 @@
-sv xil_defaultlib --include "../../../ipstatic/hdl" --include "../../../../ip_core.gen/sources_1/ip/ldpc_0/drivers/ldpc_v2_0/src" \
-"../../../../ip_core.gen/sources_1/ip/ldpc_0/sim/ldpc_0.sv" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort
