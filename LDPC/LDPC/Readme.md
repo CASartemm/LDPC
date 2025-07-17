@@ -35,3 +35,10 @@
 ![Создать ошибки](https://github.com/CASartemm/LDPC/blob/main/images/4.png?raw=true)
 
 Через Ctrl+F в Tcl консоли и написав “ОШИБКА” увидим в каких строках расчетный результат отличается от ожидания :
+
+![ошибка первая](https://github.com/CASartemm/LDPC/blob/main/images/5.png?raw=true)
+
+
+![ошибка вторая](https://github.com/CASartemm/LDPC/blob/main/images/6.png?raw=true)
+
+![ошибка третья](https://github.com/CASartemm/LDPC/blob/main/images/7.png?raw=true)
