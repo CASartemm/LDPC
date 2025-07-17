@@ -27,3 +27,4 @@
 
 ![Результат ожидания](https://github.com/CASartemm/LDPC/blob/main/images/2.png?raw=true)
 В данном файле измерений все расчетные биты совпадают с ожиданием .
+![Совпадают с ожиданием](https://github.com/CASartemm/LDPC/blob/main/images/3.png?raw=true)
