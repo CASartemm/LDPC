@@ -22,3 +22,5 @@
 
 
 ![Описание симуляции](https://github.com/CASartemm/LDPC/blob/main/images/1.png?raw=true)
+
+В Tcl консоль выводится результат сравнения расчетного результата с ожиданием.
