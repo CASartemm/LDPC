@@ -2,9 +2,9 @@
 2020.2
 Oct 14 2022
 05:20:55
-D:/work/LDPC/LDPC/LDPC.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-D:/work/LDPC/LDPC/LDPC.srcs/sim_1/new/tb_LDPC.v,1752590866,verilog,,,,tb_LDPC,,,,,,,,
-D:/work/LDPC/LDPC/LDPC.srcs/sources_1/new/LDPC.v,1752668051,verilog,,D:/work/LDPC/LDPC/LDPC.srcs/sources_1/new/bit_receiver.v,,LDPC,,,,,,,,
-D:/work/LDPC/LDPC/LDPC.srcs/sources_1/new/bit_receiver.v,1752590799,verilog,,D:/work/LDPC/LDPC/LDPC.srcs/sources_1/new/calculate_vector.v,,bit_receiver,,,,,,,,
-D:/work/LDPC/LDPC/LDPC.srcs/sources_1/new/calculate_vector.v,1752590774,verilog,,D:/work/LDPC/LDPC/LDPC.srcs/sources_1/new/shift_register_processor.v,,calculate_vector,,,,,,,,
-D:/work/LDPC/LDPC/LDPC.srcs/sources_1/new/shift_register_processor.v,1752590832,verilog,,D:/work/LDPC/LDPC/LDPC.srcs/sim_1/new/tb_LDPC.v,,shift_register_processor,,,,,,,,
+H:/Git/LDPC/LDPC/LDPC/LDPC.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sim_1/new/tb_LDPC.v,1752590866,verilog,,,,tb_LDPC,,,,,,,,
+H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/LDPC.v,1752668051,verilog,,H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/bit_receiver.v,,LDPC,,,,,,,,
+H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/bit_receiver.v,1752590799,verilog,,H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/calculate_vector.v,,bit_receiver,,,,,,,,
+H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/calculate_vector.v,1752590774,verilog,,H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/shift_register_processor.v,,calculate_vector,,,,,,,,
+H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/shift_register_processor.v,1752590832,verilog,,H:/Git/LDPC/LDPC/LDPC/LDPC.srcs/sim_1/new/tb_LDPC.v,,shift_register_processor,,,,,,,,
