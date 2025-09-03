@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue May 20 11:30:36 2025
+# Process ID: 5344
+# Current directory: C:/Users/arty/YandexDisk/vivado_project/LDPC/Версии/shift_register_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2348 C:\Users\arty\YandexDisk\vivado_project\LDPC\Версии\shift_register_processor\shift_register_processor.xpr
+# Log file: C:/Users/arty/YandexDisk/vivado_project/LDPC/Версии/shift_register_processor/vivado.log
+# Journal file: C:/Users/arty/YandexDisk/vivado_project/LDPC/Версии/shift_register_processor\vivado.jou
+# Running On        :DESKTOP-UDM1N2Q
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency     :1797 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16469 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19019 MB
+# Available Virtual :11029 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/arty/YandexDisk/vivado_project/LDPC/Версии/shift_register_processor/shift_register_processor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_shift_register_processor.tcl
+add_force {/tb_shift_register_processor/valid} -radix hex {0 1ns}
+run all
+relaunch_sim
+add_force {/tb_shift_register_processor/rst} -radix hex {1 1ns}
+run all
+run all
+close_sim
+launch_simulation
+source tb_shift_register_processor.tcl
+close_sim
+launch_simulation
+source tb_shift_register_processor.tcl
+close_sim
+launch_simulation
+source tb_shift_register_processor.tcl
+relaunch_sim
+add_force {/tb_shift_register_processor/rst} -radix hex {1 1s}
+run all
+relaunch_sim
+add_force {/tb_shift_register_processor/rst} -radix hex {1 1ns}
+run all
+add_force {/tb_shift_register_processor/rst} -radix hex {0 1ns}
+run all
+relaunch_sim
+close_sim

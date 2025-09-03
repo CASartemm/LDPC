@@ -1,9 +1,5 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../LDPC.srcs/sources_1/new/LDPC.v" \
-"../../../../LDPC.srcs/sources_1/new/bit_receiver.v" \
-"../../../../LDPC.srcs/sources_1/new/calculate_vector.v" \
-"../../../../LDPC.srcs/sources_1/new/shift_register_processor.v" \
 "../../../../LDPC.srcs/sim_1/new/tb_LDPC.v" \
 
 # compile glbl module

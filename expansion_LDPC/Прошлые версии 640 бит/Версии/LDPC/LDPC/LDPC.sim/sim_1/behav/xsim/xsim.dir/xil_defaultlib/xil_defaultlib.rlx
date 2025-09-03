@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/axi_stream_master.v,1747293128,verilog,,C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/shift_register_processor.v,,axi_stream_master,,,,,,,,
+C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/shift_register_processor.v,1747293176,verilog,,C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/top_module.v,,shift_register_processor,,,,,,,,
+C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/tb_top_module.v,1747294443,verilog,,,,tb_top_module,,,,,,,,
+C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/top_module.v,1747293062,verilog,,C:/Users/arty/YandexDisk/vivado_project/LDPC/LDPC/LDPC/LDPC.srcs/sources_1/new/tb_top_module.v,,matrix_vector_multiplier;top_module,,,,,,,,

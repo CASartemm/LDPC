@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Арти/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Арти/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master_tb

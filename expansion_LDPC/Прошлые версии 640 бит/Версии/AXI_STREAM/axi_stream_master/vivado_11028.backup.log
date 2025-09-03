@@ -1,0 +1,1842 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon May 12 21:04:40 2025
+# Process ID: 11028
+# Current directory: C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10652 C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.xpr
+# Log file: C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/vivado.log
+# Journal file: C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master\vivado.jou
+# Running On        :DESKTOP-OG1KD42
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 7 5700X 8-Core Processor             
+# CPU Frequency     :3400 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :25676 MB
+# Swap memory       :6853 MB
+# Total Virtual     :32529 MB
+# Available Virtual :23337 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Vivado/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1529.973 ; gain = 361.625
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Vivado/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'axi_stream_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "axi_stream_master_tb_behav -key {Behavioral:sim_1:Functional:axi_stream_master_tb} -tclbatch {axi_stream_master_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source axi_stream_master_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'axi_stream_master_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1596.000 ; gain = 37.191
+run all
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+$finish called at time : 6410 ns : File "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" Line 32
+run all
+POLYCHENO: 1, TLAST: 1
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Vivado/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'axi_stream_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+POLYCHENO: 0, TLAST: 0
+POLYCHENO: 1, TLAST: 0
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+ERROR: [Common 17-180] Spawn failed: Illegal byte sequence
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+ERROR: [Common 17-180] Spawn failed: Illegal byte sequence
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Vivado/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'axi_stream_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_stream_master
+Compiling module xil_defaultlib.axi_stream_master_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot axi_stream_master_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "axi_stream_master_tb_behav -key {Behavioral:sim_1:Functional:axi_stream_master_tb} -tclbatch {axi_stream_master_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source axi_stream_master_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Data truncated while reading Datafile: sequence.txt, while loading at index: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'axi_stream_master_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_stream_master
+Compiling module xil_defaultlib.axi_stream_master_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot axi_stream_master_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+WARNING: Data truncated while reading Datafile: sequence.txt, while loading at index: 0
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2661.746 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Vivado/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'axi_stream_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "axi_stream_master_tb_behav -key {Behavioral:sim_1:Functional:axi_stream_master_tb} -tclbatch {axi_stream_master_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source axi_stream_master_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'axi_stream_master_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+run all
+$finish called at time : 6530 ns : File "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" Line 36
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+run all
+$finish called at time : 6530 ns : File "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" Line 36
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Àğòè\YandexDisk-mosinartemij\vivado_project\LDPC\AXI_STREAM\axi_stream_master\axi_stream_master.srcs\sources_1\new\axi_stream_master.v:]
+ERROR: [Common 17-180] Spawn failed: Illegal byte sequence
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'axi_stream_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Vivado/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'axi_stream_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj axi_stream_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_stream_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_stream_master_tb_behav xil_defaultlib.axi_stream_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_stream_master
+Compiling module xil_defaultlib.axi_stream_master_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot axi_stream_master_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "axi_stream_master_tb_behav -key {Behavioral:sim_1:Functional:axi_stream_master_tb} -tclbatch {axi_stream_master_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source axi_stream_master_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time: 35000, Transmitted bit: 0
+Time: 45000, Transmitted bit: 0
+Time: 55000, Transmitted bit: 0
+Time: 65000, Transmitted bit: 0
+Time: 75000, Transmitted bit: 0
+Time: 85000, Transmitted bit: 0
+Time: 95000, Transmitted bit: 0
+Time: 105000, Transmitted bit: 0
+Time: 115000, Transmitted bit: 1
+Time: 125000, Transmitted bit: 1
+Time: 135000, Transmitted bit: 1
+Time: 145000, Transmitted bit: 0
+Time: 155000, Transmitted bit: 1
+Time: 165000, Transmitted bit: 1
+Time: 175000, Transmitted bit: 0
+Time: 185000, Transmitted bit: 1
+Time: 195000, Transmitted bit: 0
+Time: 205000, Transmitted bit: 0
+Time: 215000, Transmitted bit: 1
+Time: 225000, Transmitted bit: 1
+Time: 235000, Transmitted bit: 1
+Time: 245000, Transmitted bit: 1
+Time: 255000, Transmitted bit: 0
+Time: 265000, Transmitted bit: 1
+Time: 275000, Transmitted bit: 1
+Time: 285000, Transmitted bit: 1
+Time: 295000, Transmitted bit: 1
+Time: 305000, Transmitted bit: 1
+Time: 315000, Transmitted bit: 0
+Time: 325000, Transmitted bit: 1
+Time: 335000, Transmitted bit: 0
+Time: 345000, Transmitted bit: 1
+Time: 355000, Transmitted bit: 0
+Time: 365000, Transmitted bit: 0
+Time: 375000, Transmitted bit: 0
+Time: 385000, Transmitted bit: 0
+Time: 395000, Transmitted bit: 1
+Time: 405000, Transmitted bit: 1
+Time: 415000, Transmitted bit: 0
+Time: 425000, Transmitted bit: 1
+Time: 435000, Transmitted bit: 0
+Time: 445000, Transmitted bit: 0
+Time: 455000, Transmitted bit: 0
+Time: 465000, Transmitted bit: 1
+Time: 475000, Transmitted bit: 1
+Time: 485000, Transmitted bit: 0
+Time: 495000, Transmitted bit: 0
+Time: 505000, Transmitted bit: 0
+Time: 515000, Transmitted bit: 1
+Time: 525000, Transmitted bit: 1
+Time: 535000, Transmitted bit: 1
+Time: 545000, Transmitted bit: 0
+Time: 555000, Transmitted bit: 1
+Time: 565000, Transmitted bit: 1
+Time: 575000, Transmitted bit: 0
+Time: 585000, Transmitted bit: 0
+Time: 595000, Transmitted bit: 0
+Time: 605000, Transmitted bit: 1
+Time: 615000, Transmitted bit: 0
+Time: 625000, Transmitted bit: 1
+Time: 635000, Transmitted bit: 0
+Time: 645000, Transmitted bit: 1
+Time: 655000, Transmitted bit: 0
+Time: 665000, Transmitted bit: 1
+Time: 675000, Transmitted bit: 1
+Time: 685000, Transmitted bit: 1
+Time: 695000, Transmitted bit: 1
+Time: 705000, Transmitted bit: 1
+Time: 715000, Transmitted bit: 0
+Time: 725000, Transmitted bit: 0
+Time: 735000, Transmitted bit: 0
+Time: 745000, Transmitted bit: 1
+Time: 755000, Transmitted bit: 0
+Time: 765000, Transmitted bit: 1
+Time: 775000, Transmitted bit: 0
+Time: 785000, Transmitted bit: 1
+Time: 795000, Transmitted bit: 0
+Time: 805000, Transmitted bit: 0
+Time: 815000, Transmitted bit: 0
+Time: 825000, Transmitted bit: 1
+Time: 835000, Transmitted bit: 0
+Time: 845000, Transmitted bit: 0
+Time: 855000, Transmitted bit: 1
+Time: 865000, Transmitted bit: 1
+Time: 875000, Transmitted bit: 1
+Time: 885000, Transmitted bit: 1
+Time: 895000, Transmitted bit: 0
+Time: 905000, Transmitted bit: 1
+Time: 915000, Transmitted bit: 1
+Time: 925000, Transmitted bit: 0
+Time: 935000, Transmitted bit: 1
+Time: 945000, Transmitted bit: 0
+Time: 955000, Transmitted bit: 0
+Time: 965000, Transmitted bit: 1
+Time: 975000, Transmitted bit: 1
+Time: 985000, Transmitted bit: 1
+Time: 995000, Transmitted bit: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'axi_stream_master_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2683.625 ; gain = 0.000
+run all
+Time: 1005000, Transmitted bit: 1
+Time: 1015000, Transmitted bit: 0
+Time: 1025000, Transmitted bit: 0
+Time: 1035000, Transmitted bit: 0
+Time: 1045000, Transmitted bit: 0
+Time: 1055000, Transmitted bit: 1
+Time: 1065000, Transmitted bit: 0
+Time: 1075000, Transmitted bit: 1
+Time: 1085000, Transmitted bit: 0
+Time: 1095000, Transmitted bit: 1
+Time: 1105000, Transmitted bit: 0
+Time: 1115000, Transmitted bit: 1
+Time: 1125000, Transmitted bit: 1
+Time: 1135000, Transmitted bit: 1
+Time: 1145000, Transmitted bit: 0
+Time: 1155000, Transmitted bit: 0
+Time: 1165000, Transmitted bit: 0
+Time: 1175000, Transmitted bit: 1
+Time: 1185000, Transmitted bit: 0
+Time: 1195000, Transmitted bit: 1
+Time: 1205000, Transmitted bit: 1
+Time: 1215000, Transmitted bit: 1
+Time: 1225000, Transmitted bit: 0
+Time: 1235000, Transmitted bit: 0
+Time: 1245000, Transmitted bit: 0
+Time: 1255000, Transmitted bit: 1
+Time: 1265000, Transmitted bit: 0
+Time: 1275000, Transmitted bit: 1
+Time: 1285000, Transmitted bit: 1
+Time: 1295000, Transmitted bit: 1
+Time: 1305000, Transmitted bit: 0
+Time: 1315000, Transmitted bit: 0
+Time: 1325000, Transmitted bit: 0
+Time: 1335000, Transmitted bit: 1
+Time: 1345000, Transmitted bit: 0
+Time: 1355000, Transmitted bit: 1
+Time: 1365000, Transmitted bit: 0
+Time: 1375000, Transmitted bit: 0
+Time: 1385000, Transmitted bit: 0
+Time: 1395000, Transmitted bit: 0
+Time: 1405000, Transmitted bit: 1
+Time: 1415000, Transmitted bit: 1
+Time: 1425000, Transmitted bit: 1
+Time: 1435000, Transmitted bit: 0
+Time: 1445000, Transmitted bit: 1
+Time: 1455000, Transmitted bit: 1
+Time: 1465000, Transmitted bit: 0
+Time: 1475000, Transmitted bit: 1
+Time: 1485000, Transmitted bit: 0
+Time: 1495000, Transmitted bit: 0
+Time: 1505000, Transmitted bit: 0
+Time: 1515000, Transmitted bit: 0
+Time: 1525000, Transmitted bit: 0
+Time: 1535000, Transmitted bit: 0
+Time: 1545000, Transmitted bit: 0
+Time: 1555000, Transmitted bit: 0
+Time: 1565000, Transmitted bit: 1
+Time: 1575000, Transmitted bit: 1
+Time: 1585000, Transmitted bit: 0
+Time: 1595000, Transmitted bit: 0
+Time: 1605000, Transmitted bit: 0
+Time: 1615000, Transmitted bit: 1
+Time: 1625000, Transmitted bit: 0
+Time: 1635000, Transmitted bit: 0
+Time: 1645000, Transmitted bit: 1
+Time: 1655000, Transmitted bit: 0
+Time: 1665000, Transmitted bit: 0
+Time: 1675000, Transmitted bit: 0
+Time: 1685000, Transmitted bit: 0
+Time: 1695000, Transmitted bit: 0
+Time: 1705000, Transmitted bit: 1
+Time: 1715000, Transmitted bit: 1
+Time: 1725000, Transmitted bit: 1
+Time: 1735000, Transmitted bit: 0
+Time: 1745000, Transmitted bit: 0
+Time: 1755000, Transmitted bit: 0
+Time: 1765000, Transmitted bit: 1
+Time: 1775000, Transmitted bit: 0
+Time: 1785000, Transmitted bit: 0
+Time: 1795000, Transmitted bit: 0
+Time: 1805000, Transmitted bit: 1
+Time: 1815000, Transmitted bit: 1
+Time: 1825000, Transmitted bit: 1
+Time: 1835000, Transmitted bit: 0
+Time: 1845000, Transmitted bit: 1
+Time: 1855000, Transmitted bit: 0
+Time: 1865000, Transmitted bit: 1
+Time: 1875000, Transmitted bit: 0
+Time: 1885000, Transmitted bit: 1
+Time: 1895000, Transmitted bit: 0
+Time: 1905000, Transmitted bit: 0
+Time: 1915000, Transmitted bit: 1
+Time: 1925000, Transmitted bit: 1
+Time: 1935000, Transmitted bit: 0
+Time: 1945000, Transmitted bit: 1
+Time: 1955000, Transmitted bit: 1
+Time: 1965000, Transmitted bit: 0
+Time: 1975000, Transmitted bit: 0
+Time: 1985000, Transmitted bit: 0
+Time: 1995000, Transmitted bit: 0
+Time: 2005000, Transmitted bit: 1
+Time: 2015000, Transmitted bit: 1
+Time: 2025000, Transmitted bit: 1
+Time: 2035000, Transmitted bit: 1
+Time: 2045000, Transmitted bit: 1
+Time: 2055000, Transmitted bit: 0
+Time: 2065000, Transmitted bit: 1
+Time: 2075000, Transmitted bit: 1
+Time: 2085000, Transmitted bit: 0
+Time: 2095000, Transmitted bit: 1
+Time: 2105000, Transmitted bit: 1
+Time: 2115000, Transmitted bit: 1
+Time: 2125000, Transmitted bit: 1
+Time: 2135000, Transmitted bit: 1
+Time: 2145000, Transmitted bit: 0
+Time: 2155000, Transmitted bit: 0
+Time: 2165000, Transmitted bit: 0
+Time: 2175000, Transmitted bit: 0
+Time: 2185000, Transmitted bit: 1
+Time: 2195000, Transmitted bit: 0
+Time: 2205000, Transmitted bit: 0
+Time: 2215000, Transmitted bit: 0
+Time: 2225000, Transmitted bit: 0
+Time: 2235000, Transmitted bit: 0
+Time: 2245000, Transmitted bit: 0
+Time: 2255000, Transmitted bit: 1
+Time: 2265000, Transmitted bit: 0
+Time: 2275000, Transmitted bit: 0
+Time: 2285000, Transmitted bit: 1
+Time: 2295000, Transmitted bit: 1
+Time: 2305000, Transmitted bit: 0
+Time: 2315000, Transmitted bit: 0
+Time: 2325000, Transmitted bit: 0
+Time: 2335000, Transmitted bit: 0
+Time: 2345000, Transmitted bit: 1
+Time: 2355000, Transmitted bit: 0
+Time: 2365000, Transmitted bit: 1
+Time: 2375000, Transmitted bit: 1
+Time: 2385000, Transmitted bit: 0
+Time: 2395000, Transmitted bit: 0
+Time: 2405000, Transmitted bit: 0
+Time: 2415000, Transmitted bit: 0
+Time: 2425000, Transmitted bit: 0
+Time: 2435000, Transmitted bit: 1
+Time: 2445000, Transmitted bit: 0
+Time: 2455000, Transmitted bit: 0
+Time: 2465000, Transmitted bit: 1
+Time: 2475000, Transmitted bit: 0
+Time: 2485000, Transmitted bit: 1
+Time: 2495000, Transmitted bit: 1
+Time: 2505000, Transmitted bit: 0
+Time: 2515000, Transmitted bit: 1
+Time: 2525000, Transmitted bit: 0
+Time: 2535000, Transmitted bit: 0
+Time: 2545000, Transmitted bit: 1
+Time: 2555000, Transmitted bit: 1
+Time: 2565000, Transmitted bit: 1
+Time: 2575000, Transmitted bit: 0
+Time: 2585000, Transmitted bit: 0
+Time: 2595000, Transmitted bit: 1
+Time: 2605000, Transmitted bit: 1
+Time: 2615000, Transmitted bit: 0
+Time: 2625000, Transmitted bit: 0
+Time: 2635000, Transmitted bit: 1
+Time: 2645000, Transmitted bit: 0
+Time: 2655000, Transmitted bit: 1
+Time: 2665000, Transmitted bit: 1
+Time: 2675000, Transmitted bit: 1
+Time: 2685000, Transmitted bit: 0
+Time: 2695000, Transmitted bit: 0
+Time: 2705000, Transmitted bit: 0
+Time: 2715000, Transmitted bit: 1
+Time: 2725000, Transmitted bit: 0
+Time: 2735000, Transmitted bit: 1
+Time: 2745000, Transmitted bit: 0
+Time: 2755000, Transmitted bit: 1
+Time: 2765000, Transmitted bit: 0
+Time: 2775000, Transmitted bit: 1
+Time: 2785000, Transmitted bit: 1
+Time: 2795000, Transmitted bit: 1
+Time: 2805000, Transmitted bit: 1
+Time: 2815000, Transmitted bit: 0
+Time: 2825000, Transmitted bit: 1
+Time: 2835000, Transmitted bit: 0
+Time: 2845000, Transmitted bit: 0
+Time: 2855000, Transmitted bit: 1
+Time: 2865000, Transmitted bit: 1
+Time: 2875000, Transmitted bit: 0
+Time: 2885000, Transmitted bit: 1
+Time: 2895000, Transmitted bit: 1
+Time: 2905000, Transmitted bit: 1
+Time: 2915000, Transmitted bit: 1
+Time: 2925000, Transmitted bit: 1
+Time: 2935000, Transmitted bit: 1
+Time: 2945000, Transmitted bit: 0
+Time: 2955000, Transmitted bit: 0
+Time: 2965000, Transmitted bit: 1
+Time: 2975000, Transmitted bit: 0
+Time: 2985000, Transmitted bit: 0
+Time: 2995000, Transmitted bit: 0
+Time: 3005000, Transmitted bit: 1
+Time: 3015000, Transmitted bit: 1
+Time: 3025000, Transmitted bit: 1
+Time: 3035000, Transmitted bit: 0
+Time: 3045000, Transmitted bit: 0
+Time: 3055000, Transmitted bit: 1
+Time: 3065000, Transmitted bit: 0
+Time: 3075000, Transmitted bit: 0
+Time: 3085000, Transmitted bit: 1
+Time: 3095000, Transmitted bit: 0
+Time: 3105000, Transmitted bit: 1
+Time: 3115000, Transmitted bit: 1
+Time: 3125000, Transmitted bit: 1
+Time: 3135000, Transmitted bit: 0
+Time: 3145000, Transmitted bit: 1
+Time: 3155000, Transmitted bit: 1
+Time: 3165000, Transmitted bit: 1
+Time: 3175000, Transmitted bit: 1
+Time: 3185000, Transmitted bit: 1
+Time: 3195000, Transmitted bit: 0
+Time: 3205000, Transmitted bit: 0
+Time: 3215000, Transmitted bit: 1
+Time: 3225000, Transmitted bit: 0
+Time: 3235000, Transmitted bit: 0
+Time: 3245000, Transmitted bit: 0
+Time: 3255000, Transmitted bit: 0
+Time: 3265000, Transmitted bit: 1
+Time: 3275000, Transmitted bit: 1
+Time: 3285000, Transmitted bit: 0
+Time: 3295000, Transmitted bit: 0
+Time: 3305000, Transmitted bit: 1
+Time: 3315000, Transmitted bit: 0
+Time: 3325000, Transmitted bit: 1
+Time: 3335000, Transmitted bit: 1
+Time: 3345000, Transmitted bit: 0
+Time: 3355000, Transmitted bit: 0
+Time: 3365000, Transmitted bit: 0
+Time: 3375000, Transmitted bit: 1
+Time: 3385000, Transmitted bit: 0
+Time: 3395000, Transmitted bit: 0
+Time: 3405000, Transmitted bit: 0
+Time: 3415000, Transmitted bit: 0
+Time: 3425000, Transmitted bit: 0
+Time: 3435000, Transmitted bit: 0
+Time: 3445000, Transmitted bit: 1
+Time: 3455000, Transmitted bit: 1
+Time: 3465000, Transmitted bit: 0
+Time: 3475000, Transmitted bit: 1
+Time: 3485000, Transmitted bit: 0
+Time: 3495000, Transmitted bit: 0
+Time: 3505000, Transmitted bit: 1
+Time: 3515000, Transmitted bit: 1
+Time: 3525000, Transmitted bit: 0
+Time: 3535000, Transmitted bit: 1
+Time: 3545000, Transmitted bit: 0
+Time: 3555000, Transmitted bit: 1
+Time: 3565000, Transmitted bit: 1
+Time: 3575000, Transmitted bit: 1
+Time: 3585000, Transmitted bit: 1
+Time: 3595000, Transmitted bit: 1
+Time: 3605000, Transmitted bit: 0
+Time: 3615000, Transmitted bit: 0
+Time: 3625000, Transmitted bit: 1
+Time: 3635000, Transmitted bit: 0
+Time: 3645000, Transmitted bit: 0
+Time: 3655000, Transmitted bit: 1
+Time: 3665000, Transmitted bit: 1
+Time: 3675000, Transmitted bit: 1
+Time: 3685000, Transmitted bit: 0
+Time: 3695000, Transmitted bit: 0
+Time: 3705000, Transmitted bit: 0
+Time: 3715000, Transmitted bit: 1
+Time: 3725000, Transmitted bit: 0
+Time: 3735000, Transmitted bit: 1
+Time: 3745000, Transmitted bit: 1
+Time: 3755000, Transmitted bit: 0
+Time: 3765000, Transmitted bit: 0
+Time: 3775000, Transmitted bit: 0
+Time: 3785000, Transmitted bit: 0
+Time: 3795000, Transmitted bit: 0
+Time: 3805000, Transmitted bit: 1
+Time: 3815000, Transmitted bit: 0
+Time: 3825000, Transmitted bit: 0
+Time: 3835000, Transmitted bit: 1
+Time: 3845000, Transmitted bit: 0
+Time: 3855000, Transmitted bit: 0
+Time: 3865000, Transmitted bit: 1
+Time: 3875000, Transmitted bit: 0
+Time: 3885000, Transmitted bit: 1
+Time: 3895000, Transmitted bit: 1
+Time: 3905000, Transmitted bit: 1
+Time: 3915000, Transmitted bit: 0
+Time: 3925000, Transmitted bit: 1
+Time: 3935000, Transmitted bit: 0
+Time: 3945000, Transmitted bit: 1
+Time: 3955000, Transmitted bit: 1
+Time: 3965000, Transmitted bit: 1
+Time: 3975000, Transmitted bit: 0
+Time: 3985000, Transmitted bit: 1
+Time: 3995000, Transmitted bit: 0
+Time: 4005000, Transmitted bit: 0
+Time: 4015000, Transmitted bit: 0
+Time: 4025000, Transmitted bit: 0
+Time: 4035000, Transmitted bit: 0
+Time: 4045000, Transmitted bit: 0
+Time: 4055000, Transmitted bit: 0
+Time: 4065000, Transmitted bit: 1
+Time: 4075000, Transmitted bit: 0
+Time: 4085000, Transmitted bit: 1
+Time: 4095000, Transmitted bit: 1
+Time: 4105000, Transmitted bit: 1
+Time: 4115000, Transmitted bit: 0
+Time: 4125000, Transmitted bit: 0
+Time: 4135000, Transmitted bit: 0
+Time: 4145000, Transmitted bit: 1
+Time: 4155000, Transmitted bit: 1
+Time: 4165000, Transmitted bit: 0
+Time: 4175000, Transmitted bit: 1
+Time: 4185000, Transmitted bit: 1
+Time: 4195000, Transmitted bit: 1
+Time: 4205000, Transmitted bit: 1
+Time: 4215000, Transmitted bit: 0
+Time: 4225000, Transmitted bit: 0
+Time: 4235000, Transmitted bit: 1
+Time: 4245000, Transmitted bit: 1
+Time: 4255000, Transmitted bit: 0
+Time: 4265000, Transmitted bit: 0
+Time: 4275000, Transmitted bit: 0
+Time: 4285000, Transmitted bit: 0
+Time: 4295000, Transmitted bit: 0
+Time: 4305000, Transmitted bit: 0
+Time: 4315000, Transmitted bit: 1
+Time: 4325000, Transmitted bit: 0
+Time: 4335000, Transmitted bit: 1
+Time: 4345000, Transmitted bit: 1
+Time: 4355000, Transmitted bit: 1
+Time: 4365000, Transmitted bit: 1
+Time: 4375000, Transmitted bit: 1
+Time: 4385000, Transmitted bit: 0
+Time: 4395000, Transmitted bit: 1
+Time: 4405000, Transmitted bit: 0
+Time: 4415000, Transmitted bit: 1
+Time: 4425000, Transmitted bit: 1
+Time: 4435000, Transmitted bit: 0
+Time: 4445000, Transmitted bit: 0
+Time: 4455000, Transmitted bit: 0
+Time: 4465000, Transmitted bit: 1
+Time: 4475000, Transmitted bit: 1
+Time: 4485000, Transmitted bit: 0
+Time: 4495000, Transmitted bit: 1
+Time: 4505000, Transmitted bit: 1
+Time: 4515000, Transmitted bit: 0
+Time: 4525000, Transmitted bit: 1
+Time: 4535000, Transmitted bit: 0
+Time: 4545000, Transmitted bit: 1
+Time: 4555000, Transmitted bit: 0
+Time: 4565000, Transmitted bit: 0
+Time: 4575000, Transmitted bit: 0
+Time: 4585000, Transmitted bit: 0
+Time: 4595000, Transmitted bit: 1
+Time: 4605000, Transmitted bit: 0
+Time: 4615000, Transmitted bit: 1
+Time: 4625000, Transmitted bit: 0
+Time: 4635000, Transmitted bit: 0
+Time: 4645000, Transmitted bit: 0
+Time: 4655000, Transmitted bit: 1
+Time: 4665000, Transmitted bit: 0
+Time: 4675000, Transmitted bit: 0
+Time: 4685000, Transmitted bit: 0
+Time: 4695000, Transmitted bit: 1
+Time: 4705000, Transmitted bit: 0
+Time: 4715000, Transmitted bit: 1
+Time: 4725000, Transmitted bit: 0
+Time: 4735000, Transmitted bit: 1
+Time: 4745000, Transmitted bit: 0
+Time: 4755000, Transmitted bit: 1
+Time: 4765000, Transmitted bit: 0
+Time: 4775000, Transmitted bit: 0
+Time: 4785000, Transmitted bit: 0
+Time: 4795000, Transmitted bit: 1
+Time: 4805000, Transmitted bit: 1
+Time: 4815000, Transmitted bit: 1
+Time: 4825000, Transmitted bit: 0
+Time: 4835000, Transmitted bit: 1
+Time: 4845000, Transmitted bit: 1
+Time: 4855000, Transmitted bit: 1
+Time: 4865000, Transmitted bit: 1
+Time: 4875000, Transmitted bit: 1
+Time: 4885000, Transmitted bit: 0
+Time: 4895000, Transmitted bit: 1
+Time: 4905000, Transmitted bit: 0
+Time: 4915000, Transmitted bit: 0
+Time: 4925000, Transmitted bit: 1
+Time: 4935000, Transmitted bit: 0
+Time: 4945000, Transmitted bit: 0
+Time: 4955000, Transmitted bit: 1
+Time: 4965000, Transmitted bit: 1
+Time: 4975000, Transmitted bit: 0
+Time: 4985000, Transmitted bit: 1
+Time: 4995000, Transmitted bit: 0
+Time: 5005000, Transmitted bit: 1
+Time: 5015000, Transmitted bit: 1
+Time: 5025000, Transmitted bit: 0
+Time: 5035000, Transmitted bit: 1
+Time: 5045000, Transmitted bit: 1
+Time: 5055000, Transmitted bit: 1
+Time: 5065000, Transmitted bit: 1
+Time: 5075000, Transmitted bit: 0
+Time: 5085000, Transmitted bit: 0
+Time: 5095000, Transmitted bit: 0
+Time: 5105000, Transmitted bit: 1
+Time: 5115000, Transmitted bit: 1
+Time: 5125000, Transmitted bit: 0
+Time: 5135000, Transmitted bit: 1
+Time: 5145000, Transmitted bit: 1
+Time: 5155000, Transmitted bit: 1
+Time: 5165000, Transmitted bit: 1
+Time: 5175000, Transmitted bit: 1
+Time: 5185000, Transmitted bit: 1
+Time: 5195000, Transmitted bit: 1
+Time: 5205000, Transmitted bit: 0
+Time: 5215000, Transmitted bit: 0
+Time: 5225000, Transmitted bit: 0
+Time: 5235000, Transmitted bit: 0
+Time: 5245000, Transmitted bit: 0
+Time: 5255000, Transmitted bit: 0
+Time: 5265000, Transmitted bit: 0
+Time: 5275000, Transmitted bit: 1
+Time: 5285000, Transmitted bit: 1
+Time: 5295000, Transmitted bit: 1
+Time: 5305000, Transmitted bit: 1
+Time: 5315000, Transmitted bit: 1
+Time: 5325000, Transmitted bit: 0
+Time: 5335000, Transmitted bit: 0
+Time: 5345000, Transmitted bit: 1
+Time: 5355000, Transmitted bit: 0
+Time: 5365000, Transmitted bit: 1
+Time: 5375000, Transmitted bit: 1
+Time: 5385000, Transmitted bit: 1
+Time: 5395000, Transmitted bit: 0
+Time: 5405000, Transmitted bit: 0
+Time: 5415000, Transmitted bit: 1
+Time: 5425000, Transmitted bit: 1
+Time: 5435000, Transmitted bit: 1
+Time: 5445000, Transmitted bit: 0
+Time: 5455000, Transmitted bit: 0
+Time: 5465000, Transmitted bit: 1
+Time: 5475000, Transmitted bit: 0
+Time: 5485000, Transmitted bit: 0
+Time: 5495000, Transmitted bit: 1
+Time: 5505000, Transmitted bit: 0
+Time: 5515000, Transmitted bit: 0
+Time: 5525000, Transmitted bit: 1
+Time: 5535000, Transmitted bit: 0
+Time: 5545000, Transmitted bit: 1
+Time: 5555000, Transmitted bit: 0
+Time: 5565000, Transmitted bit: 1
+Time: 5575000, Transmitted bit: 1
+Time: 5585000, Transmitted bit: 0
+Time: 5595000, Transmitted bit: 0
+Time: 5605000, Transmitted bit: 0
+Time: 5615000, Transmitted bit: 0
+Time: 5625000, Transmitted bit: 0
+Time: 5635000, Transmitted bit: 0
+Time: 5645000, Transmitted bit: 1
+Time: 5655000, Transmitted bit: 0
+Time: 5665000, Transmitted bit: 1
+Time: 5675000, Transmitted bit: 0
+Time: 5685000, Transmitted bit: 1
+Time: 5695000, Transmitted bit: 0
+Time: 5705000, Transmitted bit: 1
+Time: 5715000, Transmitted bit: 1
+Time: 5725000, Transmitted bit: 0
+Time: 5735000, Transmitted bit: 0
+Time: 5745000, Transmitted bit: 1
+Time: 5755000, Transmitted bit: 1
+Time: 5765000, Transmitted bit: 0
+Time: 5775000, Transmitted bit: 1
+Time: 5785000, Transmitted bit: 0
+Time: 5795000, Transmitted bit: 1
+Time: 5805000, Transmitted bit: 1
+Time: 5815000, Transmitted bit: 0
+Time: 5825000, Transmitted bit: 1
+Time: 5835000, Transmitted bit: 1
+Time: 5845000, Transmitted bit: 1
+Time: 5855000, Transmitted bit: 1
+Time: 5865000, Transmitted bit: 1
+Time: 5875000, Transmitted bit: 0
+Time: 5885000, Transmitted bit: 0
+Time: 5895000, Transmitted bit: 0
+Time: 5905000, Transmitted bit: 1
+Time: 5915000, Transmitted bit: 1
+Time: 5925000, Transmitted bit: 1
+Time: 5935000, Transmitted bit: 0
+Time: 5945000, Transmitted bit: 1
+Time: 5955000, Transmitted bit: 0
+Time: 5965000, Transmitted bit: 0
+Time: 5975000, Transmitted bit: 0
+Time: 5985000, Transmitted bit: 1
+Time: 5995000, Transmitted bit: 0
+Time: 6005000, Transmitted bit: 0
+Time: 6015000, Transmitted bit: 0
+Time: 6025000, Transmitted bit: 0
+Time: 6035000, Transmitted bit: 0
+Time: 6045000, Transmitted bit: 1
+Time: 6055000, Transmitted bit: 1
+Time: 6065000, Transmitted bit: 1
+Time: 6075000, Transmitted bit: 1
+Time: 6085000, Transmitted bit: 1
+Time: 6095000, Transmitted bit: 1
+Time: 6105000, Transmitted bit: 1
+Time: 6115000, Transmitted bit: 1
+Time: 6125000, Transmitted bit: 0
+Time: 6135000, Transmitted bit: 1
+Time: 6145000, Transmitted bit: 1
+Time: 6155000, Transmitted bit: 1
+Time: 6165000, Transmitted bit: 1
+Time: 6175000, Transmitted bit: 0
+Time: 6185000, Transmitted bit: 1
+Time: 6195000, Transmitted bit: 0
+Time: 6205000, Transmitted bit: 0
+Time: 6215000, Transmitted bit: 1
+Time: 6225000, Transmitted bit: 1
+Time: 6235000, Transmitted bit: 1
+Time: 6245000, Transmitted bit: 1
+Time: 6255000, Transmitted bit: 1
+Time: 6265000, Transmitted bit: 0
+Time: 6275000, Transmitted bit: 1
+Time: 6285000, Transmitted bit: 0
+Time: 6295000, Transmitted bit: 1
+Time: 6305000, Transmitted bit: 1
+Time: 6315000, Transmitted bit: 1
+Time: 6325000, Transmitted bit: 1
+Time: 6335000, Transmitted bit: 1
+Time: 6345000, Transmitted bit: 1
+Time: 6355000, Transmitted bit: 1
+Time: 6365000, Transmitted bit: 1
+Time: 6375000, Transmitted bit: 1
+Time: 6385000, Transmitted bit: 0
+Time: 6395000, Transmitted bit: 0
+Time: 6405000, Transmitted bit: 1
+Time: 6415000, Transmitted bit: 0
+Time: 6425000, Transmitted bit: 1
+Time: 6435000, Transmitted bit: 0
+Error: Only 641 bits were transmitted.
+$finish called at time : 6530 ns : File "C:/Users/Àğòè/YandexDisk-mosinartemij/vivado_project/LDPC/AXI_STREAM/axi_stream_master/axi_stream_master.srcs/sources_1/new/axi_stream_master_tb.v" Line 36
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 22:04:07 2025...

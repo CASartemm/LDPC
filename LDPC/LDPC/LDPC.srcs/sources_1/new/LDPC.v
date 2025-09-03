@@ -1,6 +1,6 @@
-// LDPC.v: Топ-модуль - обертка для calculate_vector. Только основные пины как порты.
+// LDPC: Топ-модуль - обертка для calculate_vector. Только основные пины как порты.
 
-module LDPC (
+module tdma_LDPC (
     input  wire aclk,             // Вход: тактовый сигнал (clock)
     input  wire aresetn,          // Вход: сигнал сброса 
     input  wire s_axis_tdata,     // Вход: 1-битные данные по AXI-Stream
@@ -15,7 +15,7 @@ module LDPC (
 );
 
 // Инстанс DUT (calculate_vector) - подключаем все порты напрямую.
-calculate_vector dut (
+tdma_calculate_vector dut (
     .aclk(aclk),
     .aresetn(aresetn),
     .s_axis_tdata(s_axis_tdata),

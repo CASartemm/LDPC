@@ -35,27 +35,12 @@ module tb_scrambler;  // Основной модуль тестбенча для проверки модуля scrambler
 
     always #5 clk = ~clk;  // Генератор такта: инверсия каждые 5 единиц времени
 
-    integer i;
+    integer i;   
     
-    
-    
-    // Добавление задержки на m_axis_tready
-//initial begin
-  //  m_axis_tready = 1;
-    //#1000 m_axis_tready = 0;  // Задержка 500 единиц времени, затем m_axis_tready низкий
-    //#3000 m_axis_tready = 1;  // Через 100 единиц времени m_axis_tready снова высокий
-//end
+ 
 
-////
-
-
-
-////
-    initial begin
-     
-      
-     
-
+    initial begin        
+   
         // Открытие файла
         fd = $fopen("Scrembler_data.txt", "r");
         if (fd == 0) begin
