@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../tdma_LDPC.srcs/sources_1/new/tdma_LDPC.v" \
+"../../../../tdma_LDPC.srcs/sources_1/new/tdma_calculate_vector.v" \
+"../../../../tdma_LDPC.srcs/sources_1/new/tdma_shift_register_processor.v" \
+"../../../../tdma_LDPC.srcs/sim_1/new/tb_tdma_LDPC.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
