@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_tdma_LDPC_behav/xsimk.exe -simmode gui -wdb tb_tdma_LDPC_behav.wdb -simrunnum 0 -socket 50069
-Design successfully loaded
-Design Loading Memory Usage: 7200 KB (Peak: 7200 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 15864 KB (Peak: 15864 KB)
-Simulation CPU Usage: 218 ms
