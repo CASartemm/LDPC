@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_LDPC_behav/xsimk.exe -simmode gui -wdb tb_LDPC_behav.wdb -simrunnum 0 -socket 7276
+Design successfully loaded
+Design Loading Memory Usage: 7216 KB (Peak: 7216 KB)
+Design Loading CPU Usage: 0 ms
