@@ -1,0 +1,397 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Nov 18 11:50:00 2025
+# Process ID: 9116
+# Current directory: H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.runs/synth_1
+# Command line: vivado.exe -log tdma_ldpc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tdma_ldpc.tcl
+# Log file: H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.runs/synth_1/tdma_ldpc.vds
+# Journal file: H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.runs/synth_1\vivado.jou
+# Running On: DESKTOP-OG1KD42, OS: Windows, CPU Frequency: 3400 MHz, CPU Physical cores: 16, Host memory: 25676 MB
+#-----------------------------------------------------------
+source tdma_ldpc.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/utils_1/imports/synth_1/tdma_ldpc.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/utils_1/imports/synth_1/tdma_ldpc.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top tdma_ldpc -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14456
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [H:/Vivado_2022.2/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-9400] empty statement in sequential block [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v:381]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 836.648 ; gain = 409.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tdma_ldpc' [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'tdma_ldpc_calc' [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v:1]
+INFO: [Synth 8-226] default block is never used [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v:82]
+INFO: [Synth 8-226] default block is never used [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v:510]
+INFO: [Synth 8-6155] done synthesizing module 'tdma_ldpc_calc' (0#1) [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v:1]
+WARNING: [Synth 8-7071] port 'fec_len_dbg' of module 'tdma_ldpc_calc' is unconnected for instance 'dut' [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc.v:21]
+WARNING: [Synth 8-7071] port 'length_data' of module 'tdma_ldpc_calc' is unconnected for instance 'dut' [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc.v:21]
+WARNING: [Synth 8-7071] port 'rows_required' of module 'tdma_ldpc_calc' is unconnected for instance 'dut' [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc.v:21]
+WARNING: [Synth 8-7023] instance 'dut' of module 'tdma_ldpc_calc' has 15 connections declared, but only 12 given [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'tdma_ldpc' (0#1) [H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.srcs/sources_1/new/tdma_ldpc.v:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 967.641 ; gain = 540.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 967.641 ; gain = 540.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 967.641 ; gain = 540.191
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1187.316 ; gain = 759.867
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input   2880 Bit         XORs := 1     
++---Registers : 
+	             2880 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input 2880 Bit        Muxes := 8     
+	  15 Input 2880 Bit        Muxes := 2     
+	   2 Input 1024 Bit        Muxes := 2     
+	   2 Input  768 Bit        Muxes := 2     
+	  13 Input  768 Bit        Muxes := 1     
+	   2 Input  576 Bit        Muxes := 2     
+	   2 Input  512 Bit        Muxes := 4     
+	   2 Input  384 Bit        Muxes := 6     
+	   2 Input  288 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 4     
+	   2 Input  192 Bit        Muxes := 2     
+	   3 Input  192 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   4 Input    5 Bit        Muxes := 1     
+	  15 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 23    
+	  15 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "coeff" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "coeff" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "coeff" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port fec_len_dbg[4] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port fec_len_dbg[3] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port fec_len_dbg[2] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port fec_len_dbg[1] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port fec_len_dbg[0] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port length_data[4] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port length_data[3] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port length_data[2] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port length_data[1] driven by constant 0
+WARNING: [Synth 8-3917] design tdma_ldpc_calc__GB0 has port length_data[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'shift_reg[1855]' (FDCE) to 'shift_reg[1854]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1854]' (FDCE) to 'shift_reg[1853]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1853]' (FDCE) to 'shift_reg[1852]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1852]' (FDCE) to 'shift_reg[1851]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1851]' (FDCE) to 'shift_reg[1850]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1850]' (FDCE) to 'shift_reg[1849]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1849]' (FDCE) to 'shift_reg[1848]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1848]' (FDCE) to 'shift_reg[1847]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1847]' (FDCE) to 'shift_reg[1846]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1846]' (FDCE) to 'shift_reg[1845]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1845]' (FDCE) to 'shift_reg[1844]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1844]' (FDCE) to 'shift_reg[1843]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1843]' (FDCE) to 'shift_reg[1842]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1842]' (FDCE) to 'shift_reg[1841]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1841]' (FDCE) to 'shift_reg[1840]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1840]' (FDCE) to 'shift_reg[1839]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1839]' (FDCE) to 'shift_reg[1838]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1838]' (FDCE) to 'shift_reg[1837]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1837]' (FDCE) to 'shift_reg[1836]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1836]' (FDCE) to 'shift_reg[1835]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1835]' (FDCE) to 'shift_reg[1834]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1834]' (FDCE) to 'shift_reg[1833]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1833]' (FDCE) to 'shift_reg[1832]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1832]' (FDCE) to 'shift_reg[1831]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1831]' (FDCE) to 'shift_reg[1830]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1830]' (FDCE) to 'shift_reg[1829]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1829]' (FDCE) to 'shift_reg[1828]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1828]' (FDCE) to 'shift_reg[1827]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1827]' (FDCE) to 'shift_reg[1826]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1826]' (FDCE) to 'shift_reg[1825]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1825]' (FDCE) to 'shift_reg[1824]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1824]' (FDCE) to 'shift_reg[1823]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1823]' (FDCE) to 'shift_reg[1822]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1822]' (FDCE) to 'shift_reg[1821]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1821]' (FDCE) to 'shift_reg[1820]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1820]' (FDCE) to 'shift_reg[1819]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1819]' (FDCE) to 'shift_reg[1818]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1818]' (FDCE) to 'shift_reg[1817]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1817]' (FDCE) to 'shift_reg[1816]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1816]' (FDCE) to 'shift_reg[1815]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1815]' (FDCE) to 'shift_reg[1814]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1814]' (FDCE) to 'shift_reg[1813]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1813]' (FDCE) to 'shift_reg[1812]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1812]' (FDCE) to 'shift_reg[1811]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1811]' (FDCE) to 'shift_reg[1810]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1810]' (FDCE) to 'shift_reg[1809]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1809]' (FDCE) to 'shift_reg[1808]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1808]' (FDCE) to 'shift_reg[1807]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1807]' (FDCE) to 'shift_reg[1806]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1806]' (FDCE) to 'shift_reg[1805]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1805]' (FDCE) to 'shift_reg[1804]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1804]' (FDCE) to 'shift_reg[1803]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1803]' (FDCE) to 'shift_reg[1802]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1802]' (FDCE) to 'shift_reg[1801]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1801]' (FDCE) to 'shift_reg[1800]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1800]' (FDCE) to 'shift_reg[1799]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1799]' (FDCE) to 'shift_reg[1798]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1798]' (FDCE) to 'shift_reg[1797]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1797]' (FDCE) to 'shift_reg[1796]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1796]' (FDCE) to 'shift_reg[1795]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1795]' (FDCE) to 'shift_reg[1794]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1794]' (FDCE) to 'shift_reg[1793]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1793]' (FDCE) to 'shift_reg[1792]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1792]' (FDCE) to 'shift_reg[1791]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1791]' (FDCE) to 'shift_reg[1790]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1790]' (FDCE) to 'shift_reg[1789]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1789]' (FDCE) to 'shift_reg[1788]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1788]' (FDCE) to 'shift_reg[1787]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1787]' (FDCE) to 'shift_reg[1786]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1786]' (FDCE) to 'shift_reg[1785]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1785]' (FDCE) to 'shift_reg[1784]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1784]' (FDCE) to 'shift_reg[1783]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1783]' (FDCE) to 'shift_reg[1782]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1782]' (FDCE) to 'shift_reg[1781]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1781]' (FDCE) to 'shift_reg[1780]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1780]' (FDCE) to 'shift_reg[1779]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1779]' (FDCE) to 'shift_reg[1778]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1778]' (FDCE) to 'shift_reg[1777]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1777]' (FDCE) to 'shift_reg[1776]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1776]' (FDCE) to 'shift_reg[1775]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1775]' (FDCE) to 'shift_reg[1774]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1774]' (FDCE) to 'shift_reg[1773]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1773]' (FDCE) to 'shift_reg[1772]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1772]' (FDCE) to 'shift_reg[1771]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1771]' (FDCE) to 'shift_reg[1770]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1770]' (FDCE) to 'shift_reg[1769]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1769]' (FDCE) to 'shift_reg[1768]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1768]' (FDCE) to 'shift_reg[1767]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1767]' (FDCE) to 'shift_reg[1766]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1766]' (FDCE) to 'shift_reg[1765]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1765]' (FDCE) to 'shift_reg[1764]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1764]' (FDCE) to 'shift_reg[1763]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1763]' (FDCE) to 'shift_reg[1762]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1762]' (FDCE) to 'shift_reg[1761]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1761]' (FDCE) to 'shift_reg[1760]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1760]' (FDCE) to 'shift_reg[1759]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1759]' (FDCE) to 'shift_reg[1758]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1758]' (FDCE) to 'shift_reg[1757]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1757]' (FDCE) to 'shift_reg[1756]'
+INFO: [Synth 8-3886] merging instance 'shift_reg[1756]' (FDCE) to 'shift_reg[1755]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shift_reg[0] )
+INFO: [Synth 8-5546] ROM "shift" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shift" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-7031] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5586] ROM size for  "p_0_out" is below threshold of ROM address width. However it will be mapped to Block Ram due to explicit rom_style/ram_style attribute 
+INFO: [Synth 8-7031] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5586] ROM size for  "p_0_out" is below threshold of ROM address width. However it will be mapped to Block Ram due to explicit rom_style/ram_style attribute 
+INFO: [Synth 8-7031] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5586] ROM size for  "p_0_out" is below threshold of ROM address width. However it will be mapped to Block Ram due to explicit rom_style/ram_style attribute 
+INFO: [Synth 8-7031] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5586] ROM size for  "p_0_out" is below threshold of ROM address width. However it will be mapped to Block Ram due to explicit rom_style/ram_style attribute 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 1187.316 ; gain = 759.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+--------------+---------------+----------------+
+|Module Name    | RTL Object   | Depth x Width | Implemented As | 
++---------------+--------------+---------------+----------------+
+|tdma_ldpc_calc | Slot_4_Fec_2 | 16x512        | LUT            | 
+|tdma_ldpc_calc | Slot_4_Fec_3 | 32x384        | LUT            | 
+|tdma_ldpc_calc | Slot_4_Fec_4 | 32x256        | LUT            | 
+|tdma_ldpc_calc | Slot_3_Fec_1 | 16x576        | LUT            | 
+|tdma_ldpc_calc | Slot_3_Fec_2 | 16x384        | LUT            | 
+|tdma_ldpc_calc | Slot_3_Fec_3 | 32x288        | LUT            | 
+|tdma_ldpc_calc | Slot_2_Fec_1 | 16x384        | LUT            | 
+|tdma_ldpc_calc | Slot_2_Fec_3 | 32x192        | LUT            | 
+|tdma_ldpc_calc | Slot_8_Fec_2 | 16x1024       | LUT            | 
+|tdma_ldpc_calc | Slot_2_Fec_2 | 16x256        | LUT            | 
+|tdma_ldpc_calc | Slot_8_Fec_4 | 32x512        | LUT            | 
+|tdma_ldpc_calc | Slot_3_Fec_4 | 32x192        | LUT            | 
+|tdma_ldpc_calc | Slot_2_Fec_4 | 32x128        | LUT            | 
++---------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:45 . Memory (MB): peak = 1201.496 ; gain = 774.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 1287.328 ; gain = 859.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1302.984 ; gain = 875.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1302.984 ; gain = 875.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 1302.984 ; gain = 875.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 1302.984 ; gain = 875.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1302.984 ; gain = 875.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1302.984 ; gain = 875.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     7|
+|4     |LUT2   |    54|
+|5     |LUT3   |  1384|
+|6     |LUT4   |   321|
+|7     |LUT5   |   714|
+|8     |LUT6   |  2226|
+|9     |MUXF7  |   127|
+|10    |MUXF8  |    55|
+|11    |FDCE   |  2164|
+|12    |FDPE   |     2|
+|13    |IBUF   |    14|
+|14    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |  7081|
+|2     |  dut    |tdma_ldpc_calc |  7062|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1302.984 ; gain = 875.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1302.984 ; gain = 875.535
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1302.984 ; gain = 875.535
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1315.027 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'tdma_ldpc' is not ideal for floorplanning, since the cellview 'tdma_ldpc_calc' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1339.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: da9daaa1
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1339.137 ; gain = 919.277
+INFO: [Common 17-1381] The checkpoint 'H:/Git/4_FEC/LDPC_MINI/FINAL/LDPC.runs/synth_1/tdma_ldpc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tdma_ldpc_utilization_synth.rpt -pb tdma_ldpc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 18 11:50:59 2025...

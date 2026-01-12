@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_LDPC_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_LDPC" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,266.580000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,279.330001 us"></ZoomEndTime>
+      <Cursor1Time time="1,277.205000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="182"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/tb_LDPC/aclk" type="logic">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/aresetn" type="logic">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/slot_size" type="array">
+      <obj_property name="ElementShortName">slot_size[3:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_size[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/slot_type" type="array">
+      <obj_property name="ElementShortName">slot_type[3:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_type[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/s_axis_tdata" type="logic">
+      <obj_property name="ElementShortName">s_axis_tdata</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/s_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/s_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">s_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/s_axis_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/m_axis_tdata" type="logic">
+      <obj_property name="ElementShortName">m_axis_tdata</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/m_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/m_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/m_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/row" type="array">
+      <obj_property name="ElementShortName">row[4:0]</obj_property>
+      <obj_property name="ObjectShortName">row[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/state" type="array">
+      <obj_property name="ElementShortName">state[0:0]</obj_property>
+      <obj_property name="ObjectShortName">state[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/shift" type="array">
+      <obj_property name="ElementShortName">shift[2879:0]</obj_property>
+      <obj_property name="ObjectShortName">shift[2879:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/shift_cnt" type="array">
+      <obj_property name="ElementShortName">shift_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_cnt[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/acc" type="array">
+      <obj_property name="ElementShortName">acc[2879:0]</obj_property>
+      <obj_property name="ObjectShortName">acc[2879:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/RECV_DATA" type="logic">
+      <obj_property name="ElementShortName">RECV_DATA</obj_property>
+      <obj_property name="ObjectShortName">RECV_DATA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/SEND_LDPC" type="logic">
+      <obj_property name="ElementShortName">SEND_LDPC</obj_property>
+      <obj_property name="ObjectShortName">SEND_LDPC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/state" type="array">
+      <obj_property name="ElementShortName">state[0:0]</obj_property>
+      <obj_property name="ObjectShortName">state[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/send_bits" type="array">
+      <obj_property name="ElementShortName">send_bits[12:0]</obj_property>
+      <obj_property name="ObjectShortName">send_bits[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/fec_len_dbg" type="array">
+      <obj_property name="ElementShortName">fec_len_dbg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fec_len_dbg[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/length_data" type="array">
+      <obj_property name="ElementShortName">length_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">length_data[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/rows_required" type="array">
+      <obj_property name="ElementShortName">rows_required[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rows_required[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LDPC/dut/dut/key" type="array">
+      <obj_property name="ElementShortName">key[7:0]</obj_property>
+      <obj_property name="ObjectShortName">key[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

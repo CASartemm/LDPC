@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+H:/Git/4_FEC/LDPC/LDPC/LDPC.srcs/sim_1/new/tb_tdma_ldpc_calc.v,1759326446,verilog,,,,tb_tdma_ldpc_calc,,,,,,,,
+H:/Git_LDPC_search/LDPC_Search/LDPC.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sim_1/new/tb_tdma_ldpc_calc.v,1763472718,verilog,,,,tb_LDPC,,,,,,,,
+H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sources_1/new/tdma_ldpc.v,1759303908,verilog,,H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v,,tdma_ldpc,,,,,,,,
+H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v,1763538691,verilog,,H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sim_1/new/tb_tdma_ldpc_calc.v,,tdma_ldpc_calc,,,,,,,,

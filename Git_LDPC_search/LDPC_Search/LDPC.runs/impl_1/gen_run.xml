@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1763455865">
+  <File Type="ROUTE-PWR" Name="tdma_ldpc_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="tdma_ldpc.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="tdma_ldpc_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="tdma_ldpc_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="tdma_ldpc.msk"/>
+  <File Type="ROUTE-CLK" Name="tdma_ldpc_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="tdma_ldpc.vdi"/>
+  <File Type="BG-BIT" Name="tdma_ldpc.bit"/>
+  <File Type="BG-DRC" Name="tdma_ldpc.drc"/>
+  <File Type="BG-BGN" Name="tdma_ldpc.bgn"/>
+  <File Type="BG-BIN" Name="tdma_ldpc.bin"/>
+  <File Type="BITSTR-RBT" Name="tdma_ldpc.rbt"/>
+  <File Type="BITSTR-NKY" Name="tdma_ldpc.nky"/>
+  <File Type="BITSTR-BMM" Name="tdma_ldpc_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="tdma_ldpc.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tdma_ldpc_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="tdma_ldpc.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tdma_ldpc_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="tdma_ldpc.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="tdma_ldpc_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="tdma_ldpc.hwdef"/>
+  <File Type="PLACE-IO" Name="tdma_ldpc_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tdma_ldpc_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tdma_ldpc_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="tdma_ldpc_routed.rqs"/>
+  <File Type="PLACE-CTRL" Name="tdma_ldpc_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tdma_ldpc_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-DRC" Name="tdma_ldpc_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tdma_ldpc_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="tdma_ldpc_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="tdma_ldpc_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tdma_ldpc_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="tdma_ldpc_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="tdma_ldpc_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tdma_ldpc_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tdma_ldpc_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="tdma_ldpc_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tdma_ldpc_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="tdma_ldpc_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="tdma_ldpc_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="tdma_ldpc_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="tdma_ldpc_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="tdma_ldpc_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="tdma_ldpc_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tdma_ldpc_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="tdma_ldpc_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tdma_ldpc_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tdma_ldpc_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="tdma_ldpc_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tdma_ldpc_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="tdma_ldpc.pdi"/>
+  <File Type="RCFI_FILE" Name="tdma_ldpc.rcfi"/>
+  <File Type="CFI_FILE" Name="tdma_ldpc.cfi"/>
+  <File Type="RNPI_FILE" Name="tdma_ldpc.rnpi"/>
+  <File Type="NPI_FILE" Name="tdma_ldpc.npi"/>
+  <File Type="RBD_FILE" Name="tdma_ldpc.rbd"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="tdma_ldpc_postroute_physopted.rqs"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/tdma_ldpc_calc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tdma_ldpc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tdma_ldpc"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/tdma_ldpc.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

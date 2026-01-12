@@ -1,0 +1,19 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: H:/Vivado_2022.2/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_LDPC_behav xil_defaultlib.tb_LDPC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sources_1/new/tdma_ldpc.v" Line 3. Module tdma_ldpc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v" Line 1. Module tdma_ldpc_calc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sources_1/new/tdma_ldpc.v" Line 3. Module tdma_ldpc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "H:/Git_LDPC_search/LDPC_Search/LDPC.srcs/sources_1/new/tdma_ldpc_calc.v" Line 1. Module tdma_ldpc_calc doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tdma_ldpc_calc
+Compiling module xil_defaultlib.tdma_ldpc
+Compiling module xil_defaultlib.tb_LDPC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_LDPC_behav
